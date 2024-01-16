@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/css/output.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body class="">
+    
+    <!-- Gradient bg -->
+    <div class="w-[92%] aspect-[1266/649] fixed -top-[243px] -left-[3%] grad-rad-1 -z-10"></div>
+    <div class="w-[73%] aspect-[994/531] fixed -top-[184px] left-[25%] grad-rad-2 -z-10">
+        <div class="w-full h-full backdrop-brightness-50"></div>
+    </div>
+    <div class="w-[89%] aspect-[1214/649] fixed -top-[243px] left-[46%] grad-rad-3 -z-10">
+        <div class="w-full h-full backdrop-brightness-[0.35]"></div>
+    </div>
+
+
+    <header class="flex py-4 px-[2.56%] justify-between sticky top-0 z-10 bg-accent7">
+
+        <div class="flex justify-between w-3/5 items-center">
+
+            <a class="shrink-0" href="#">
+                <img src="assets/img/beatmarket-logo.svg" alt="">
+            </a>
+
+            <div class="flex grow pl-[8%] pr-[6%]">
+
+                <div class="w-1/5 border border-r-[0.5px] border-accent6 rounded-l-[5px] bg-accent8 min-w-20">
+
+                    <select name="" id="" class="text-sm text-primary py-4 pl-2 pr-4  bg-transparent w-full">
+                        <option value="">Tracks</option>
+                    </select>
+                </div>
+
+                <div class="w-4/5 pr-8 relative bg-accent7 border border-l-0 border-accent6 rounded-r-[5px]">
+
+                    <input type="text"
+                        class="py-4 focus:outline-none px-3 bg-transparent placeholder-accent5 text-sm w-full"
+                        placeholder="Ne Arıyorsunuz?">
+                    <a href="#" class="absolute right-0 top-0 block p-4">
+                        <img class="" src="/assets/img/search-icon.svg" alt="">
+                    </a>
+
+                </div>
+
+            </div>
+
+            <nav class="text-accent5 text-sm flex gap-x-10 justify-between">
+                <a href="">Keşfet</a>
+                <a href="">Üreticiler</a>
+            </nav>
+
+        </div>
+
+        <div class="flex items-center text-primary text-sm gap-x-2">
+            <div class="flex items-center">
+                <a class="border-r border-r-primary px-4" href="">Giriş Yap</a>
+                <a class="px-4" href="">Üye Ol</a>
+            </div>
+
+            <a class="py-2 px-6 border border-white rounded-[5px]" href="#">Satmaya Başla</a>
+
+        </div>
+    </header>
+
+
+    <div class="grid grid-cols-[1fr_7fr] pl-[2.56%]">
+
+        <!-- Sticky left part -->
+        <div id="left-sidebar" class="py-4 text-xs flex flex-col gap-y-2 sticky top-[86px] overflow-y-auto">
+            <div>
+                <div class="relative">
+                    <img class="absolute top-[11px] right-3" src="assets/img/sidebar-arrow.svg" alt="">
+                    <p class="text-sm font-semibold py-1.5 mb-1 rounded-r-[20px] bg-grad-arrow cursor-pointer" href="">
+                        Tür</p>
+                </div>
+
+                <div class="flex flex-col gap-y-2">
+                    <a href="">Country</a>
+                    <a href="">Dubstep</a>
+                    <a href="">Elektronik</a>
+                    <a href="">Hip Hop / Rap</a>
+                    <a href="">Lofi</a>
+                </div>
+
+            </div>
+
+            <div>
+                <div class="relative">
+                    <img class="absolute top-[11px] right-3" src="assets/img/sidebar-arrow.svg" alt="">
+                    <p class="text-sm font-semibold py-1.5 mb-1 rounded-r-[20px] bg-grad-arrow cursor-pointer" href="">
+                        Mod</p>
+                </div>
+
+                <div class="flex flex-col gap-y-2">
+                    <a href="">Sinirli / Agresif</a>
+                    <a href="">Sakin / Yumuşak</a>
+                    <a href="">Karanlık / Şüpheli</a>
+                    <a href="">Dramatik / Duygusal</a>
+                    <a href="">Epik / Güçlü</a>
+                    <a href="">Mutlu / Neşeli</a>
+                </div>
+
+            </div>
+
+            <div>
+                <div class="relative">
+                    <img class="absolute top-[11px] right-3" src="assets/img/sidebar-arrow.svg" alt="">
+                    <p class="text-sm font-semibold py-1.5 mb-1 rounded-r-[20px] bg-grad-arrow cursor-pointer" href="">
+                        Enstrüman</p>
+                </div>
+
+                <div class="flex flex-col gap-y-2">
+                    <a href="">Akordiyon</a>
+                    <a href="">Akustik Gitar</a>
+                    <a href="">Elektronik Gitar</a>
+                    <a href="">Davul</a>
+                    <a href="">Bass</a>
+                    <a href="">Zil</a>
+                </div>
+
+            </div>
+
+            <div>
+                <div class="relative">
+                    <img class="absolute top-[11px] right-3" src="assets/img/sidebar-arrow.svg" alt="">
+                    <p class="text-sm font-semibold py-1.5 mb-1 rounded-r-[20px] bg-grad-arrow cursor-pointer" href="">
+                        Vokal</p>
+                </div>
+
+                <div class="flex flex-col gap-y-2">
+                    <a href="">Arkaplan Vokalleri</a>
+                    <a href="">Vokal Sample’ları</a>
+                    <a href="">Erkek Vokal</a>
+                    <a href="">Kadın Vokal</a>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+        <!-- main-->
+        <div class="grid grid-cols-2 auto-rows-auto pt-10 gap-x-6 pl-[3.16%] items-start">
+
+
+            <div>
+                <h1 class="font-medium text-[32px] leading-[44px] pt-[15%] pb-[4%]">Müzik Beatlerini alıp
+                    satabileceğiniz yer.</h1>
+
+                <div class="flex">
+
+                    <div class="w-1/5 border border-r-[0.5px] border-accent6 rounded-l-[5px] bg-accent8 min-w-20">
+
+                        <select name="" id="" class="text-sm text-primary py-6 pl-2 pr-4  bg-transparent w-full">
+                            <option value="">Tracks</option>
+                        </select>
+                    </div>
+
+                    <div class="w-4/5 pr-8 relative bg-accent7 border border-l-0 border-accent6 rounded-r-[5px]">
+
+                        <input type="text"
+                            class="py-6 focus:outline-none px-3 bg-transparent placeholder-accent5 text-sm w-full"
+                            placeholder="“HipHop Beat” veya “NF type beat” yazmayı dene.">
+                        <a href="#" class="absolute right-0 top-0 block p-6">
+                            <img class="" src="/assets/img/search-icon.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="flex items-center pt-4 text-sm text-primary">
+                    <h2 class="text-sm pr-4">Trending:</h2>
+                    <form class="flex  w-full flex-wrap gap-y-3 gap-x-6">
+                        <label>
+                            <input type="checkbox" class="peer hidden" value="Drill" name="beat_type" required>
+                            <div
+                                class="cursor-pointer py-2 px-4 border rounded-[20px] border-accent1 bg-transparent peer-checked:bg-accent4 peer-checked:text-accent6 transition-all ease-out duration-300">
+                                Drill</div>
+                        </label>
+                        <label>
+                            <input type="checkbox" class="peer hidden" value="Drill" name="beat_type" required>
+                            <div
+                                class="cursor-pointer py-2 px-4 border rounded-[20px] border-accent1 bg-transparent peer-checked:bg-accent4 peer-checked:text-accent6 transition-all ease-out duration-300">
+                                İndirimli</div>
+                        </label>
+                        <label>
+                            <input type="checkbox" class="peer hidden" value="Drill" name="beat_type" required>
+                            <div
+                                class="cursor-pointer py-2 px-4 border rounded-[20px] border-accent1 bg-transparent peer-checked:bg-accent4 peer-checked:text-accent6 transition-all ease-out duration-300">
+                                Afrobeat</div>
+                        </label>
+                        <label>
+                            <input type="checkbox" class="peer hidden" value="Drill" name="beat_type" required>
+                            <div
+                                class="cursor-pointer py-2 px-4 border rounded-[20px] border-accent1 bg-transparent peer-checked:bg-accent4 peer-checked:text-accent6 transition-all ease-out duration-300">
+                                T-rap</div>
+                        </label>
+                        <label>
+                            <input type="checkbox" class="peer hidden" value="Drill" name="beat_type" required>
+                            <div
+                                class="cursor-pointer py-2 px-4 border rounded-[20px] border-accent1 bg-transparent peer-checked:bg-accent4 peer-checked:text-accent6 transition-all ease-out duration-300">
+                                76 darbe</div>
+                        </label>
+                        <label>
+                            <input type="checkbox" class="peer hidden" value="Drill" name="beat_type" required>
+                            <div
+                                class="cursor-pointer py-2 px-4 border rounded-[20px] border-accent1 bg-transparent peer-checked:bg-accent4 peer-checked:text-accent6 transition-all ease-out duration-300">
+                                Arabesk Rap</div>
+                        </label>
+
+                    </form>
+                </div>
+
+
+            </div>
+
+            <div class="pr-[6.67%]">
+                <div class="aspect-square bg-landing-img bg-no-repeat bg-cover bg-center rounded-[20px]">
+
+                    <div
+                        class="relative flex flex-col justify-between h-full rounded-[20px] bg-grad-landing-img p-[5%] border border-accent2 border-opacity-95">
+
+                        <div class="flex justify-end">
+                            <img src="" alt="">
+                            <p class="text-sm">Haftanın Favori Track’i</p>
+                        </div>
+
+
+                        <img class="absolute w-1/5 top-0 bottom-0 left-0 right-0 m-auto opacity-75"
+                            src="/assets/img/play-btn.svg" alt="">
+
+                        <div class="flex justify-between items-end">
+
+                            <div class="text-sm">
+                                <p class="text-base mb-2 font-semibold">Bad Decisions</p>
+                                <p class="text-primary mb-1">John Doe</p>
+                                <p class="text-primary">80 BPM</p>
+                            </div>
+
+                            <div class="flex gap-x-4">
+                                <div class="text-right">
+                                    <p class="text-accent3 font-medium text-xs">Toplam:</p>
+                                    <p class="font-medium text-xs">210 ₺</p>
+                                </div>
+                                <a class="text-xs text-black bg-white py-2 px-6 rounded-2xl" href="">Satın Al</a>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-span-full">
+
+                <div class="pr-[6.67%] flex justify-between pt-[8%] w-full">
+
+                    <h2 class="text-primary text-2xl pb-4">Önerilen Playlistler</h2>
+                </div>
+
+                <div
+                    class="grid auto-cols-[200px] grid-flow-col gap-x-6 overflow-x-scroll hidden-scroll-bar pr-[6.67%]">
+
+                    <div>
+                        <img class="w-full aspect-square mb-4 border rounded-[10px] border-accent1"
+                            src="assets/img/pexels-carlos-pernalete-tua-709858.jpg" alt="">
+                        <div class="flex flex-col gap-y-1 text-xs text-primary">
+                            <p>928 Takipçi - 69 Track</p>
+                            <p class="text-sm font-semibold">BeatMarket Originals</p>
+                            <p>Beatmarket</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img class="w-full aspect-square mb-4 border rounded-[10px] border-accent1"
+                            src="assets/img/bruno-thethe-O-5.jpg" alt="">
+                        <div class="flex flex-col gap-y-1 text-xs text-primary">
+                            <p>928 Takipçi - 69 Track</p>
+                            <p class="text-sm font-semibold">BeatMarket Originals</p>
+                            <p>Beatmarket</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img class="w-full aspect-square mb-4 border rounded-[10px] border-accent1"
+                            src="assets/img/bruno-thethe-O-4.jpg" alt="">
+                        <div class="flex flex-col gap-y-1 text-xs text-primary">
+                            <p>928 Takipçi - 69 Track</p>
+                            <p class="text-sm font-semibold">BeatMarket Originals</p>
+                            <p>Beatmarket</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img class="w-full aspect-square mb-4 border rounded-[10px] border-accent1"
+                            src="assets/img/pexels-carlos-pernalete-tua-2.jpg" alt="">
+                        <div class="flex flex-col gap-y-1 text-xs text-primary">
+                            <p>928 Takipçi - 69 Track</p>
+                            <p class="text-sm font-semibold">BeatMarket Originals</p>
+                            <p>Beatmarket</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img class="w-full aspect-square mb-4 border rounded-[10px] border-accent1"
+                            src="assets/img/pexels-carlos-pernalete-tua-3.jpg" alt="">
+                        <div class="flex flex-col gap-y-1 text-xs text-primary">
+                            <p>928 Takipçi - 69 Track</p>
+                            <p class="text-sm font-semibold">BeatMarket Originals</p>
+                            <p>Beatmarket</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img class="w-full aspect-square mb-4 border rounded-[10px] border-accent1"
+                            src="assets/img/pexels-carlos-pernalete-tua-4.jpg" alt="">
+                        <div class="flex flex-col gap-y-1 text-xs text-primary">
+                            <p>928 Takipçi - 69 Track</p>
+                            <p class="text-sm font-semibold">BeatMarket Originals</p>
+                            <p>Beatmarket</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img class="w-full aspect-square mb-4 border rounded-[10px] border-accent1"
+                            src="assets/img/bruno-thethe-O-1.jpg" alt="">
+                        <div class="flex flex-col gap-y-1 text-xs text-primary">
+                            <p>928 Takipçi - 69 Track</p>
+                            <p class="text-sm font-semibold">BeatMarket Originals</p>
+                            <p>Beatmarket</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img class="w-full aspect-square mb-4 border rounded-[10px] border-accent1"
+                            src="assets/img/bruno-thethe-O-2.jpg" alt="">
+                        <div class="flex flex-col gap-y-1 text-xs text-primary">
+                            <p>928 Takipçi - 69 Track</p>
+                            <p class="text-sm font-semibold">BeatMarket Originals</p>
+                            <p>Beatmarket</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img class="w-full aspect-square mb-4 border rounded-[10px] border-accent1"
+                            src="assets/img/bruno-thethe-O7MCXy8Svew-unsplash.jpg" alt="">
+                        <div class="flex flex-col gap-y-1 text-xs text-primary">
+                            <p>928 Takipçi - 69 Track</p>
+                            <p class="text-sm font-semibold">BeatMarket Originals</p>
+                            <p>Beatmarket</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="col-span-full">
+
+                <div class="pr-[6.67%] flex justify-between pt-[8%] w-full">
+
+                    <h2 class="text-primary text-2xl pb-4">Önerilen Üyeler</h2>
+                </div>
+
+                <div
+                    class="grid auto-cols-[200px] grid-flow-col gap-x-6 overflow-x-scroll hidden-scroll-bar pr-[6.67%]">
+                    <div>
+
+                        <img class="rounded-full mb-4" src="assets/img/bruno-thethe-O-4.jpg" alt="">
+                        <p class="text-sm mb-1 text-center">John Doe</p>
+                        <p class="text-xs mb-1 text-center">Istanbul, Türkiye</p>
+                    </div>
+
+                    <div>
+                        <img class="rounded-full mb-4" src="assets/img/bruno-thethe-O-4.jpg" alt="">
+                        <p class="text-sm mb-1 text-center">John Doe</p>
+                        <p class="text-xs mb-1 text-center">Istanbul, Türkiye</p>
+                    </div>
+
+                    <div>
+                        <img class="rounded-full mb-4" src="assets/img/bruno-thethe-O-4.jpg" alt="">
+                        <p class="text-sm mb-1 text-center">John Doe</p>
+                        <p class="text-xs mb-1 text-center">Istanbul, Türkiye</p>
+                    </div>
+
+                    <div>
+                        <img class="rounded-full mb-4" src="assets/img/bruno-thethe-O-4.jpg" alt="">
+                        <p class="text-sm mb-1 text-center">John Doe</p>
+                        <p class="text-xs mb-1 text-center">Istanbul, Türkiye</p>
+                    </div>
+
+                    <div>
+                        <img class="rounded-full mb-4" src="assets/img/bruno-thethe-O-4.jpg" alt="">
+                        <p class="text-sm mb-1 text-center">John Doe</p>
+                        <p class="text-xs mb-1 text-center">Istanbul, Türkiye</p>
+                    </div>
+
+                    <div>
+                        <img class="rounded-full mb-4" src="assets/img/bruno-thethe-O-4.jpg" alt="">
+                        <p class="text-sm mb-1 text-center">John Doe</p>
+                        <p class="text-xs mb-1 text-center">Istanbul, Türkiye</p>
+                    </div>
+                    <div>
+                        <img class="rounded-full mb-4" src="assets/img/bruno-thethe-O-4.jpg" alt="">
+                        <p class="text-sm mb-1 text-center">John Doe</p>
+                        <p class="text-xs mb-1 text-center">Istanbul, Türkiye</p>
+                    </div>
+                    <div>
+                        <img class="rounded-full mb-4" src="assets/img/bruno-thethe-O-4.jpg" alt="">
+                        <p class="text-sm mb-1 text-center">John Doe</p>
+                        <p class="text-xs mb-1 text-center">Istanbul, Türkiye</p>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+            <div class="col-span-full">
+
+                <div class="pr-[6.67%] flex justify-between pt-[8%] w-full">
+
+                    <h2 class="text-primary text-2xl pb-4">Popüler Türler</h2>
+                </div>
+
+                <div
+                    class="grid auto-cols-[200px] grid-flow-col gap-x-6 overflow-x-scroll hidden-scroll-bar pr-[6.67%]">
+
+                    <div
+                        class="aspect-square w-full rounded-xl bg-beat-type relative flex items-center bg-center bg-cover">
+
+                        <div class="backdrop-brightness-[0.50] w-full h-full flex items-center justify-center">
+
+                            <div class="font-semibold text-sm text-primary mx-auto">HipHop / Rap</div>
+                        </div>
+
+
+                    </div>
+
+                    <div
+                        class="aspect-square w-full rounded-xl bg-beat-type relative flex items-center bg-center bg-cover">
+
+                        <div class="backdrop-brightness-[0.50] w-full h-full flex items-center justify-center">
+
+                            <div class="font-semibold text-sm text-primary mx-auto">HipHop / Rap</div>
+                        </div>
+
+
+                    </div>
+
+                    <div
+                        class="aspect-square w-full rounded-xl bg-beat-type relative flex items-center bg-center bg-cover">
+
+                        <div class="backdrop-brightness-[0.50] w-full h-full flex items-center justify-center">
+
+                            <div class="font-semibold text-sm text-primary mx-auto">HipHop / Rap</div>
+                        </div>
+
+
+                    </div>
+
+                    <div
+                        class="aspect-square w-full rounded-xl bg-beat-type relative flex items-center bg-center bg-cover">
+
+                        <div class="backdrop-brightness-[0.50] w-full h-full flex items-center justify-center">
+
+                            <div class="font-semibold text-sm text-primary mx-auto">HipHop / Rap</div>
+                        </div>
+
+
+                    </div>
+
+                    <div
+                        class="aspect-square w-full rounded-xl bg-beat-type relative flex items-center bg-center bg-cover">
+
+                        <div class="backdrop-brightness-[0.50] w-full h-full flex items-center justify-center">
+
+                            <div class="font-semibold text-sm text-primary mx-auto">HipHop / Rap</div>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+    
+
+
+
+</body>
+
+</html>

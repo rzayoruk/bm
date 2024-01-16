@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply font-manrope;
+        @apply text-base;
+        @apply font-normal;
+        @apply text-white;
+        @apply bg-black;
+    }
+}
+
+#left-sidebar {
+    height: calc(100vh - 86px);
+}
+
+.bg-grad-arrow {
+    background: linear-gradient(90deg, #0C0C0C00 0%, #363939 100%);
+}
+
+.bg-grad-sidebar {
+    background: transparent linear-gradient(164deg, #0C0C0C 0%, #0F0F0F 54%, #363939 100%) 0% 0% no-repeat padding-box;
+}
+
+.bg-grad-landing-img {
+    background: linear-gradient(180deg, #00000000 0%, #000000 100%) 0% 0% no-repeat padding-box;
+    opacity: 0.7;
+}
+
+.hidden-scroll-bar {
+    scrollbar-width: none;
+}
+
+.grad-rad-1 {
+    background: transparent radial-gradient(closest-side at 50% 50%, #400E64 0%, #00000000 100%) 0% 0% no-repeat padding-box;
+    opacity: 0.5;
+    filter: blur(50px);
+}
+
+.grad-rad-2 {
+    background: transparent radial-gradient(closest-side at 50% 50%, #0290AA 0%, #00000000 100%) 0% 0% no-repeat padding-box;
+    opacity: 0.5;
+    filter: blur(50px);
+}
+
+.grad-rad-3 {
+    background: transparent radial-gradient(closest-side at 50% 50%, #23C392 0%, #00000000 100%) 0% 0% no-repeat padding-box;
+    opacity: 0.35;
+    filter: blur(50px);
+}

@@ -15,6 +15,10 @@
     }
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 #left-sidebar {
     height: calc(100vh - 86px);
 }
@@ -53,3 +57,65 @@
     opacity: 0.35;
     filter: blur(50px);
 }
+
+
+#music-bar{
+    appearance: none;
+    height: 0;
+}
+
+.card-hover:hover .card-play{
+
+    opacity: .7;
+}
+
+.prev-btn:hover svg  > .pathprev{
+
+    fill: black;
+}
+
+.next-btn:hover svg  > .pathnext{
+
+    fill: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* input[type="range"]::-moz-range-progress {
+    background-color: red; 
+  }
+  
+  input[type="range"]::-moz-range-track {  
+    background-color: blue;
+  } */
+
+/* .slider::-moz-range-thumb {
+    height: 5px;
+    background: #FF3838;
+    cursor: pointer;
+    border-radius: 3px;
+    border:none;
+}
+
+.slider1::-webkit-slider-thumb {
+    width: 50px;
+}
+
+.slider1::-moz-range-thumb {
+    width: 50px;
+} */
+
+/* .volume::-webkit-slider-thumb {
+    width:50px;
+} */

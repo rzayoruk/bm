@@ -66,6 +66,7 @@ module.exports = {
         'accent6':'#3c3c3c',
         'accent7':'#0F0F0F',
         'accent8':'#202020',
+        'accent9':'#818181',
         
       },
       backgroundImage: {
@@ -80,5 +81,8 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+  plugins: [
+
+    require('tailwind-scrollbar'),
+  ],
 }

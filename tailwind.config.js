@@ -67,7 +67,9 @@ module.exports = {
         'accent7':'#0F0F0F',
         'accent8':'#202020',
         'accent9':'#818181',
-        
+        'accent12 ':'#299FF5',
+        'accent13':'#2e2e2e',
+
       },
       backgroundImage: {
         'sidebar-arrow': "url('/assets/img/sidebar-arrow.svg')",
@@ -78,6 +80,7 @@ module.exports = {
       },
       boxShadow: {
         'play-btn': '0px 10px 15px #00000072',
+        'music-file':'0px 3px 30px #299FF580',
       }
     },
   },

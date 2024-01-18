@@ -15,9 +15,10 @@
     }
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
+
 
 #left-sidebar {
     height: calc(100vh - 86px);
@@ -58,23 +59,27 @@ html{
     filter: blur(50px);
 }
 
+.grad-lin-4 {
+    background: transparent linear-gradient(163deg, rgba(255, 255, 255, 0.20) 0%, rgba(96, 96, 96, 0.20) 100%) 0% 0% no-repeat padding-box;
+}
 
-#music-bar{
+
+#music-bar {
     appearance: none;
     height: 0;
 }
 
-.card-hover:hover .card-play{
+.card-hover:hover .card-play {
 
     opacity: .7;
 }
 
-.prev-btn:hover svg  > .pathprev{
+.prev-btn:hover svg>.pathprev {
 
     fill: black;
 }
 
-.next-btn:hover svg  > .pathnext{
+.next-btn:hover svg>.pathnext {
 
     fill: black;
 }

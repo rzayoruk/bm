@@ -74,57 +74,35 @@
     <!-- breadcrumb -->
     <div class="">
         <ul role="list" class="flex py-4 px-[8%] list-disc gap-x-3.5 marker:text-[#299FF5] marker:text-xl list-inside">
-            <li class="text-sm xli:text-base text-accent9"><a class="pointer-events-none" href="">Üye Ol</a></li>
+            <li class="text-sm xli:text-base text-accent9"><a class="pointer-events-none" href="">Giriş Yap</a></li>
         </ul>
     </div>
 
 
-    <h1 class="text-center font-medium text-2xl xli:text-3xl mt-4">Üye Ol</h1>
+    <h1 class="text-center font-medium text-2xl xli:text-3xl mt-4">Giriş Yap</h1>
 
     <form class="w-2/5 mx-auto grid grid-cols-2 p-6 bg-accent7 border-[#1f1f1f] rounded-xl mt-6 xli:mt-8 gap-6">
 
-        <div class="w-full">
-            <label class="block mb-2 cursor-pointer" for="">Ad</label>
-            <input type="text"
-                class="w-full text-sm appearance-none bg-transparent border border-[#555555] focus:ring-0 focus:border-[#555555] focus:outline-none rounded-md px-4 py-3 caret-[#555555] placeholder:[#555555]"
-                placeholder="Ad">
-        </div>
-        <div class="w-full">
-            <label class="block mb-2 cursor-pointer" for="">Soyad</label>
-            <input type="text"
-                class="w-full text-sm appearance-none bg-transparent border border-[#555555] focus:ring-0 focus:border-[#555555] focus:outline-none rounded-md px-4 py-3 caret-[#555555] placeholder:[#555555]"
-                placeholder="Soyad">
-        </div>
-        <div class="w-full col-span-full">
-            <label class="block mb-2 cursor-pointer" for="">Profil Adı</label>
-            <input type="text"
-                class="w-full text-sm appearance-none bg-transparent border border-[#555555] focus:ring-0 focus:border-[#555555] focus:outline-none rounded-md px-4 py-3 caret-[#555555] placeholder:[#555555]"
-                placeholder="Profilinizde gözükmesini istediğiniz adı giriniz.">
-        </div>
+       
         <div class="w-full col-span-full">
             <label class="block mb-2 cursor-pointer" for="">E-Posta</label>
             <input type="email"
                 class="w-full text-sm appearance-none bg-transparent border border-[#555555] focus:ring-0 focus:border-[#555555] focus:outline-none rounded-md px-4 py-3 caret-[#555555] placeholder:[#555555]"
                 placeholder="E-Posta">
         </div>
-        <div class="w-full">
+        <div class="w-full col-span-full">
             <label class="block mb-2 cursor-pointer" for="">Parola</label>
             <input type="password"
                 class="w-full text-sm appearance-none bg-transparent border border-[#555555] focus:ring-0 focus:border-[#555555] focus:outline-none rounded-md px-4 py-3 caret-[#555555] placeholder:[#555555]"
                 placeholder="Parola">
         </div>
-        <div class="w-full">
-            <label class="block mb-2 cursor-pointer" for="">Parola (Tekrar)</label>
-            <input type="password"
-                class="w-full text-sm appearance-none bg-transparent border border-[#555555] focus:ring-0 focus:border-[#555555] focus:outline-none rounded-md px-4 py-3 caret-[#555555] placeholder:[#555555]"
-                placeholder="Parola (Tekrar)">
-        </div>
+       
         <div class="col-span-full flex items-center justify-between">
             <div>
-                <input type="checkbox" name="approval" id="approval"
+                <input type="checkbox" name="remember" id="remember"
                     class="w-6 h-6 bg-transparent form-checkbox text-[#1877F2] focus:ring-offset-0 focus:ring-0 border border-accent6 rounded-[5px] focus:outline-none transition duration-300 cursor-pointer -mt-0.5">
-                <label class="ml-2 text-accent9 text-sm xli:text-base cursor-pointer" for="approval">Üyelik
-                    Sözleşmesi’ni okudum, kabul ediyorum.</label>
+                <label class="ml-2 text-accent9 text-sm xli:text-base cursor-pointer" for="remember">Beni Hatırla</label>
+                <a class="ml-8 text-accent9 text-sm xli:text-base cursor-pointer" href="">Parolamı Unuttum</a>
             </div>
 
             <a class="text-xs xli:text-sm font-medium bg-white text-black py-2 px-6 rounded-lg" href="">Giriş Yap</a>
@@ -142,8 +120,8 @@
     </div>
 
     <div class="w-2/5 mx-auto flex justify-between items-center pt-4">
-        <p class="xli:text-[18px]">Zaten Üye Misiniz?</p>
-        <a class="bg-transparent py-2 px-6 border border-white rounded-lg" href="">Giriş Yap</a>
+        <p class="xli:text-[18px]">Henüz Üye Değil Misiniz?</p>
+        <a class="bg-transparent py-2 px-6 border border-white rounded-lg" href="">Üye Ol</a>
     </div>
 
 
@@ -151,5 +129,6 @@
 
 
 </body>
+
 
 </html>

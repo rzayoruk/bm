@@ -69,6 +69,7 @@ module.exports = {
         'accent9':'#818181',
         'accent12 ':'#299FF5',
         'accent13':'#2e2e2e',
+        'accent14':'#1a1a1a',
 
       },
       backgroundImage: {

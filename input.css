@@ -19,7 +19,10 @@ html {
     scroll-behavior: smooth;
 }
 
-
+div.active p:nth-child(3){
+    color: #2F6893;
+}
+ 
 #left-sidebar {
     height: calc(100vh - 86px);
 }

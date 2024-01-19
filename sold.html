@@ -84,7 +84,7 @@
 
     <div class="px-[8%] mt-2">
 
-        <div class="flex rounded-xl grad-lin-4 relative">
+        <div class="flex rounded-xl grad-lin-4 relative border border-accent1">
 
             <img class="w-1/4 rounded-l-xl aspect-square object-cover object-center "
                 src="assets/img/bruno-thethe-O-6.jpg" alt="">
@@ -174,40 +174,37 @@
             <h2 class="text-2xl xli:text-2xl">Lisanslar</h2>
 
 
-            <form class="grid grid-cols-3 gap-x-7 mt-6 px">
+            <div class="grid grid-cols-3 gap-x-7 mt-6 px">
 
-                <label>
-                    <input type="radio" class="peer hidden" value="ss" name="beat_type" required>
+               
                     <div
-                        class="p-6 border bg-[#1A1A1A] border-[#2E2E2E] rounded-xl flex flex-col gap-y-2 cursor-pointer peer-checked:border-[#299FF5] toggle peer-checked:bg-[#111D26] transition duration-300" onclick="toggleActive(this)">
+                        class="p-6 border bg-[#1A1A1A] border-[#2E2E2E] rounded-xl flex flex-col gap-y-2>
                         <p class="">Basic License</p>
-                        <p class="text-accent10">210 ₺</p>
+                        <p class="text-[#299FF5]">210 ₺</p>
                         <p class="text-sm text-[#555555] peer-checked:text-[#2F6893] transition duration-300 pt-1">MP3</p>
                     </div>
-                </label>
+                
 
-                <label>
-                    <input type="radio" class="peer hidden" value="ss" name="beat_type" required>
+               
                     <div
-                        class="p-6 border bg-[#1A1A1A] border-[#2E2E2E] rounded-xl flex flex-col gap-y-2 cursor-pointer peer-checked:border-[#299FF5] toggle peer-checked:bg-[#111D26] transition duration-300" onclick="toggleActive(this)">
+                        class="p-6 border bg-[#1A1A1A] border-[#2E2E2E] rounded-xl flex flex-col gap-y-2>
                         <p class="">Premium License</p>
-                        <p class="text-accent10">210 ₺</p>
+                        <p class="text-[#299FF5]">210 ₺</p>
                         <p class="text-sm text-[#555555] peer-checked:text-[#2F6893] transition duration-300 pt-1">WAV, MP3</p>
                     </div>
-                </label>
+                
 
-                <label>
-                    <input type="radio" class="peer hidden" value="ss" name="beat_type" required>
+               
                     <div
-                        class="p-6 border bg-[#1A1A1A] border-[#2E2E2E] rounded-xl flex flex-col gap-y-2 cursor-pointer peer-checked:border-[#299FF5] toggle peer-checked:bg-[#111D26] transition duration-300" onclick="toggleActive(this)">
+                        class="p-6 border bg-[#1A1A1A] border-[#2E2E2E] rounded-xl flex flex-col gap-y-2>
                         <p class="">Basic License</p>
-                        <p class="text-accent10">210 ₺</p>
+                        <p class="text-[#299FF5]">210 ₺</p>
                         <p class="text-sm text-[#555555] peer-checked:text-[#2F6893] transition duration-300 pt-1">WAV, STEMS, MP3</p>
                     </div>
-                </label>
+                
 
 
-            </form>
+            </div>
 
         </div>
 
@@ -216,11 +213,11 @@
 
     <div class="px-[8%] mt-8 xli:mt-10">
 
-        <div class="flex justify-between">
+        <div class="flex justify-between items-center">
 
             <h2 class="text-2xl xli:text-2xl">Tüm Satışlar</h2>
 
-            <div class="flex gap-x-6 w-1/4 items-center">
+            <div class="flex gap-x-6 w-[37%] items-center">
                 <div
                     class="p-4 flex justify-between items-center cursor-pointer border border-[#707070] rounded-md w-1/2">
                     <p class="text-sm text-accent5">Filtrele...</p>
@@ -252,7 +249,7 @@
 
         <!-- table body -->
         <div
-            class="pb-4 px-6 bg-[#0f0f0f] border border-b-transparent border-[#1f1f1f] border-t-0 rounded-xl rounded-t-none">
+            class="pb-4 px-6 bg-[#0f0f0f] border border-b-transparent border-[#1f1f1f] border-t-0 rounded-xl rounded-t-none [&>*:last-child]:border-b-0">
 
             <!-- loopable row -->
             <div
@@ -291,7 +288,7 @@
         </div>
 
         <!-- Pagination -->
-        <div class="col-span-full flex justify-end gap-x-2 text-sm font-medium mt-8">
+        <div class="col-span-full flex justify-end gap-x-2 text-sm font-medium mt-8 pb-12">
             <!-- PREV -->
             <div class="w-6 h-6 rounded-full bg-[#818181] flex justify-center items-center cursor-pointer">
                 <img class="rotate-90" src="assets/img/arrow-gray.svg" alt="">
@@ -384,6 +381,5 @@
 
 </body>
 
-<script src="assets/js/toggle-beat.js"></script>
 
 </html>

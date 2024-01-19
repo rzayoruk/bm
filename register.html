@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/css/output.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body class="">
+
+    <!-- Gradient bg -->
+    <div class="w-[92%] aspect-[1266/649] fixed -top-[363px] -left-[3%] grad-rad-1 -z-10"></div>
+    <div class="w-[73%] aspect-[994/531] fixed -top-[304px] left-[25%] grad-rad-2 -z-10">
+        <div class="w-full h-full backdrop-brightness-50"></div>
+    </div>
+    <div class="w-[89%] aspect-[1214/649] fixed -top-[363px] left-[46%] grad-rad-3 -z-10">
+        <div class="w-full h-full backdrop-brightness-[0.35]"></div>
+    </div>
+
+
+    <header class="flex py-4 px-[2.56%] justify-between sticky top-0 z-10 bg-accent7 text-sm xli:text-base">
+
+        <div class="flex justify-between w-3/5 items-center">
+
+            <a class="shrink-0" href="#">
+                <img src="assets/img/beatmarket-logo.svg" alt="">
+            </a>
+
+            <div class="flex grow pl-[8%] pr-[6%]">
+
+                <div
+                    class="w-1/5 border border-r-[0.5px] border-accent6 rounded-l-[5px] bg-accent8 min-w-20 relative cursor-pointer">
+
+                    <select name="" id="" class=" text-primary py-4 pl-2 pr-4  bg-transparent w-full appearance-none">
+                        <option value="">Tracks</option>
+                    </select>
+                    <img class="absolute top-6 right-2.5 pointer-events-none" src="/assets/img/arrow-bottom.svg" alt="">
+
+                </div>
+
+                <div class="w-4/5 pr-8 relative bg-accent7 border border-l-0 border-accent6 rounded-r-[5px]">
+
+                    <input type="text"
+                        class="py-4 focus:outline-none px-3 pr-[18px] bg-transparent placeholder-accent5  w-full"
+                        placeholder="Ne Arıyorsunuz?">
+                    <a href="#" class="absolute right-0 top-0 block p-[18px]">
+                        <img class="" src="/assets/img/search-icon.svg" alt="">
+                    </a>
+
+                </div>
+
+            </div>
+
+            <nav class="text-accent5  flex gap-x-10 justify-between">
+                <a href="">Keşfet</a>
+                <a href="">Üreticiler</a>
+            </nav>
+
+        </div>
+
+        <div class="flex items-center text-primary  gap-x-2">
+            <div class="flex items-center">
+                <a class="border-r border-r-primary px-4" href="">Giriş Yap</a>
+                <a class="px-4" href="">Üye Ol</a>
+            </div>
+
+            <a class="py-2 px-6 border border-white rounded-[5px]" href="#">Satmaya Başla</a>
+
+        </div>
+    </header>
+    <!-- breadcrumb -->
+    <div class="">
+        <ul role="list" class="flex py-4 px-[8%] list-disc gap-x-3.5 marker:text-[#299FF5] marker:text-xl list-inside">
+            <li class="text-sm xli:text-base text-accent9"><a class="pointer-events-none" href="">Üye Ol</a></li>
+        </ul>
+    </div>
+
+
+    <h1 class="text-center font-medium text-2xl xli:text-3xl mt-4">Üye Ol</h1>
+
+    <form class="w-2/5 mx-auto grid grid-cols-2 p-6 bg-accent7 border-[#1f1f1f] rounded-xl mt-6 xli:mt-8 gap-6">
+
+        <div class="w-full">
+            <label class="block mb-2 cursor-pointer" for="">Ad</label>
+            <input type="text"
+                class="w-full text-sm appearance-none bg-transparent border border-[#555555] focus:ring-0 focus:border-[#555555] focus:outline-none rounded-md px-4 py-3 caret-[#555555] placeholder:[#555555]"
+                placeholder="Ad">
+        </div>
+        <div class="w-full">
+            <label class="block mb-2 cursor-pointer" for="">Soyad</label>
+            <input type="text"
+                class="w-full text-sm appearance-none bg-transparent border border-[#555555] focus:ring-0 focus:border-[#555555] focus:outline-none rounded-md px-4 py-3 caret-[#555555] placeholder:[#555555]"
+                placeholder="Soyad">
+        </div>
+        <div class="w-full col-span-full">
+            <label class="block mb-2 cursor-pointer" for="">Profil Adı</label>
+            <input type="text"
+                class="w-full text-sm appearance-none bg-transparent border border-[#555555] focus:ring-0 focus:border-[#555555] focus:outline-none rounded-md px-4 py-3 caret-[#555555] placeholder:[#555555]"
+                placeholder="Profilinizde gözükmesini istediğiniz adı giriniz.">
+        </div>
+        <div class="w-full col-span-full">
+            <label class="block mb-2 cursor-pointer" for="">E-Posta</label>
+            <input type="email"
+                class="w-full text-sm appearance-none bg-transparent border border-[#555555] focus:ring-0 focus:border-[#555555] focus:outline-none rounded-md px-4 py-3 caret-[#555555] placeholder:[#555555]"
+                placeholder="E-Posta">
+        </div>
+        <div class="w-full">
+            <label class="block mb-2 cursor-pointer" for="">Parola</label>
+            <input type="password"
+                class="w-full text-sm appearance-none bg-transparent border border-[#555555] focus:ring-0 focus:border-[#555555] focus:outline-none rounded-md px-4 py-3 caret-[#555555] placeholder:[#555555]"
+                placeholder="Parola">
+        </div>
+        <div class="w-full">
+            <label class="block mb-2 cursor-pointer" for="">Parola (Tekrar)</label>
+            <input type="password"
+                class="w-full text-sm appearance-none bg-transparent border border-[#555555] focus:ring-0 focus:border-[#555555] focus:outline-none rounded-md px-4 py-3 caret-[#555555] placeholder:[#555555]"
+                placeholder="Parola (Tekrar)">
+        </div>
+        <div class="col-span-full flex items-center justify-between">
+            <div>
+                <input type="checkbox" name="approval" id="approval" class="w-6 h-6 bg-transparent form-checkbox text-[#1877F2] focus:ring-offset-0 focus:ring-0 border border-accent6 rounded-[5px] focus:outline-none transition duration-300 -mt-0.5">
+                <label class="ml-2 text-accent9 text-sm xli:text-base" for="approval">Üyelik Sözleşmesi’ni okudum, kabul ediyorum.</label>
+            </div>
+
+            <a class="text-xs xli:text-sm font-medium bg-white text-black py-2 px-6 rounded-lg" href="">Giriş Yap</a>
+        </div>
+
+
+    </form>
+
+    <div class="w-2/5 mx-auto flex gap-x-6 mt-6 pb-8 border-b border-accent6">
+
+        <a class="py-3 w-1/2 rounded-[5px] bg-[#1877F2] text-center font-medium text-xs xli:text-sm flex justify-center gap-x-4" href=""><img src="assets/img/loop-icon.svg" alt=""><span>Facebook ile Üye Ol</span></a>
+        <a class="py-3 w-1/2 rounded-[5px] bg-white text-black text-center font-medium text-xs xli:text-sm flex justify-center gap-x-4" href=""><img src="assets/img/loop-icon.svg" alt=""><span>Google ile Üye Ol</span></a>
+    </div>
+
+    <div class="w-2/5 mx-auto flex justify-between items-center pt-4">
+        <p class="xli:text-[18px]">Zaten Üye Misiniz?</p>
+        <a class="bg-transparent py-2 px-6 border border-white rounded-lg" href="">Giriş Yap</a>
+    </div>
+
+
+
+
+
+</body>
+
+<script src="assets/js/script.js"></script>
+<script src="assets/js/scroll-card.js"></script>
+
+</html>

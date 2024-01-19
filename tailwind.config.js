@@ -3,13 +3,13 @@ module.exports = {
   content: ["./**/*.{html,js}"],
   theme: {
     fontFamily: {
-      manrope: ['Manrope','sans-serif'],
+      manrope: ['Manrope', 'sans-serif'],
     },
     container: {
       center: true,
     },
 
-    screens:{
+    screens: {
       'ms': '320px',
       // => @media (min-width: 320px) { ... }
       'msix': '420px',
@@ -36,7 +36,7 @@ module.exports = {
       '2xl': '1536px',
       // => @media (min-width: 1536px) { ... }
 
-    
+
       '2xli': '1600px',
       // => @media (min-width: 1600px) { ... }
 
@@ -62,26 +62,26 @@ module.exports = {
         'accent2': '#363939',
         'accent3': '#d0d0d0',
         'accent4': '#c0c0c0',
-        'accent5':'#838383',
-        'accent6':'#3c3c3c',
-        'accent7':'#0F0F0F',
-        'accent8':'#202020',
-        'accent9':'#818181',
-        'accent12 ':'#299FF5',
-        'accent13':'#2e2e2e',
-        'accent14':'#1a1a1a',
+        'accent5': '#838383',
+        'accent6': '#3c3c3c',
+        'accent7': '#0F0F0F',
+        'accent8': '#202020',
+        'accent9': '#818181',
+        'accent12 ': '#299FF5',
+        'accent13': '#2e2e2e',
+        'accent14': '#555555',
 
       },
       backgroundImage: {
         'sidebar-arrow': "url('/assets/img/sidebar-arrow.svg')",
-        'landing-img':"url('/assets/img/bruno-thethe-O-3.jpg')",
-        'play-btn':"url('/assets/img/play-btn.svg')",
-        'beat-type':"url('/assets/img/pexels-harrison-haines-3165428.jpg')",
-        
+        'landing-img': "url('/assets/img/bruno-thethe-O-3.jpg')",
+        'play-btn': "url('/assets/img/play-btn.svg')",
+        'beat-type': "url('/assets/img/pexels-harrison-haines-3165428.jpg')",
+
       },
       boxShadow: {
         'play-btn': '0px 10px 15px #00000072',
-        'music-file':'0px 3px 30px #299FF580',
+        'music-file': '0px 3px 30px #299FF580',
       }
     },
   },

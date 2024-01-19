@@ -68,8 +68,8 @@
 
         </div>
     </header>
-    <div style="background-image: url('/assets/img/bruno-thethe-O-2.jpg');" class="bg-cover w-full   ">
-        <div class="bg-gradient-to-b from-transparent via-transparent to-black h-full">
+    <div style="background-image: url('/assets/img/bruno-thethe-O-5.jpg');" class="bg-cover w-full bg-center ">
+        <div class="bg-gradient-to-b from-transparent to-black/90 h-full">
             <div class="w-4/5 mx-auto ">
                 <div class="flex flex-col">
                     <div class="flex flex-row items-center justify-end">
@@ -80,10 +80,10 @@
                 </div>
                 <div class="flex flex-row items-end justify-between pt-8 pb-5 ">
                     <div class="flex flex-row items-center gap-x-8">
-                        <div class="relative w-40 h-40">
-                            <img src="/assets/img/bruno-thethe-O-6.jpg"
-                                class="rounded-full w-32 h-32 border-#D0D0D0 border">
-                            <img src="/assets/img/headphone.svg" alt="" class="absolute -top-1 -left-4">
+                        <div class="relative w-52 h-52">
+                            <img src="/assets/img/bruno-thethe-O-4.jpg"
+                                class="rounded-full w-[168px] aspect-square border-#D0D0D0 border bg-white">
+                            <img src="/assets/img/headphone.svg" alt="" class="absolute -top-1 -left-5 w-full">
                         </div>
                         <div class="flex flex-col gap-y-1">
                             <h2 class="font-medium text-[32px] leading-tight text-white">John Doe</h2>
@@ -125,14 +125,36 @@
         </div>
     </div>
     <div class="w-4/5 mx-auto py-8">
-        <nav class="flex flex-row items-center gap-x-12 font-medium  text-base pb-4">
-            <div class="text-white">
-                Beatler
+        <nav class="flex flex-row items-start gap-x-12 font-medium text-base py-6">
+            <div class="flex flex-col gap-y-1 items-center justify-center cursor-pointer">
+                <div class="text-base text-white font-medium">
+                    Beatler
+                </div>
+                <div class="w-4 h-[1px] bg-white mx-auto" v-if="currentPage == 'profile'"></div>
+            </div>
+            <div class="flex flex-col gap-y-1 items-center justify-center cursor-pointer">
+                <div class="text-accent5 font-normal">
+                    Sattıklarım
+                </div>
+            </div>
+            <div class="flex flex-col gap-y-1 items-center justify-center cursor-pointer">
+                <div class="text-accent5 font-normal">
+                    Satın Alınanlar
+                </div>
             </div>
         </nav>
         <div class="grid grid-cols-4 gap-x-6 gap-y-8 ">
             <div class="flex flex-col gap-y-2">
-                <img src="/assets/img/bruno-thethe-O-1.jpg" alt="" class="rounded-[10px] w-full aspect-square">
+                <div class="w-full aspect-square rounded-[10px] relative">
+                    <img src="/assets/img/bruno-thethe-O-1.jpg" alt="" class="rounded-[10px] w-full aspect-square">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="66.564" height="66.564" viewBox="0 0 66.564 66.564"
+                        class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
+                        <path id="Path_61" data-name="Path 61"
+                            d="M37.282,4A33.282,33.282,0,1,0,70.564,37.282,33.273,33.273,0,0,0,37.282,4ZM30.626,52.259V22.305L50.595,37.282Z"
+                            transform="translate(-4 -4)" opacity="0.699" />
+                    </svg>
+
+                </div>
                 <div class="flex flex-row items-center justify-between">
                     <div class="flex flex-col gap-y-0.5">
                         <h3 class="font-semibold text-base">Bad Decisions</h3>
@@ -150,7 +172,16 @@
                 </div>
             </div>
             <div class="flex flex-col gap-y-2">
-                <img src="/assets/img/bruno-thethe-O-1.jpg" alt="" class="rounded-[10px] w-full aspect-square">
+                <div class="w-full aspect-square rounded-[10px] relative">
+                    <img src="/assets/img/bruno-thethe-O-1.jpg" alt="" class="rounded-[10px] w-full aspect-square">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="66.564" height="66.564" viewBox="0 0 66.564 66.564"
+                        class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
+                        <path id="Path_61" data-name="Path 61"
+                            d="M37.282,4A33.282,33.282,0,1,0,70.564,37.282,33.273,33.273,0,0,0,37.282,4ZM30.626,52.259V22.305L50.595,37.282Z"
+                            transform="translate(-4 -4)" opacity="0.699" />
+                    </svg>
+
+                </div>
                 <div class="flex flex-row items-center justify-between">
                     <div class="flex flex-col gap-y-0.5">
                         <h3 class="font-semibold text-base">Bad Decisions</h3>
@@ -168,7 +199,16 @@
                 </div>
             </div>
             <div class="flex flex-col gap-y-2">
-                <img src="/assets/img/bruno-thethe-O-1.jpg" alt="" class="rounded-[10px] w-full aspect-square">
+                <div class="w-full aspect-square rounded-[10px] relative">
+                    <img src="/assets/img/bruno-thethe-O-1.jpg" alt="" class="rounded-[10px] w-full aspect-square">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="66.564" height="66.564" viewBox="0 0 66.564 66.564"
+                        class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
+                        <path id="Path_61" data-name="Path 61"
+                            d="M37.282,4A33.282,33.282,0,1,0,70.564,37.282,33.273,33.273,0,0,0,37.282,4ZM30.626,52.259V22.305L50.595,37.282Z"
+                            transform="translate(-4 -4)" opacity="0.699" />
+                    </svg>
+
+                </div>
                 <div class="flex flex-row items-center justify-between">
                     <div class="flex flex-col gap-y-0.5">
                         <h3 class="font-semibold text-base">Bad Decisions</h3>
@@ -186,7 +226,16 @@
                 </div>
             </div>
             <div class="flex flex-col gap-y-2">
-                <img src="/assets/img/bruno-thethe-O-1.jpg" alt="" class="rounded-[10px] w-full aspect-square">
+                <div class="w-full aspect-square rounded-[10px] relative">
+                    <img src="/assets/img/bruno-thethe-O-1.jpg" alt="" class="rounded-[10px] w-full aspect-square">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="66.564" height="66.564" viewBox="0 0 66.564 66.564"
+                        class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
+                        <path id="Path_61" data-name="Path 61"
+                            d="M37.282,4A33.282,33.282,0,1,0,70.564,37.282,33.273,33.273,0,0,0,37.282,4ZM30.626,52.259V22.305L50.595,37.282Z"
+                            transform="translate(-4 -4)" opacity="0.699" />
+                    </svg>
+
+                </div>
                 <div class="flex flex-row items-center justify-between">
                     <div class="flex flex-col gap-y-0.5">
                         <h3 class="font-semibold text-base">Bad Decisions</h3>
@@ -204,7 +253,16 @@
                 </div>
             </div>
             <div class="flex flex-col gap-y-2">
-                <img src="/assets/img/bruno-thethe-O-1.jpg" alt="" class="rounded-[10px] w-full aspect-square">
+                <div class="w-full aspect-square rounded-[10px] relative">
+                    <img src="/assets/img/bruno-thethe-O-1.jpg" alt="" class="rounded-[10px] w-full aspect-square">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="66.564" height="66.564" viewBox="0 0 66.564 66.564"
+                        class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
+                        <path id="Path_61" data-name="Path 61"
+                            d="M37.282,4A33.282,33.282,0,1,0,70.564,37.282,33.273,33.273,0,0,0,37.282,4ZM30.626,52.259V22.305L50.595,37.282Z"
+                            transform="translate(-4 -4)" opacity="0.699" />
+                    </svg>
+
+                </div>
                 <div class="flex flex-row items-center justify-between">
                     <div class="flex flex-col gap-y-0.5">
                         <h3 class="font-semibold text-base">Bad Decisions</h3>
@@ -222,7 +280,205 @@
                 </div>
             </div>
             <div class="flex flex-col gap-y-2">
-                <img src="/assets/img/bruno-thethe-O-1.jpg" alt="" class="rounded-[10px] w-full aspect-square">
+                <div class="w-full aspect-square rounded-[10px] relative">
+                    <img src="/assets/img/bruno-thethe-O-1.jpg" alt="" class="rounded-[10px] w-full aspect-square">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="66.564" height="66.564" viewBox="0 0 66.564 66.564"
+                        class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
+                        <path id="Path_61" data-name="Path 61"
+                            d="M37.282,4A33.282,33.282,0,1,0,70.564,37.282,33.273,33.273,0,0,0,37.282,4ZM30.626,52.259V22.305L50.595,37.282Z"
+                            transform="translate(-4 -4)" opacity="0.699" />
+                    </svg>
+
+                </div>
+                <div class="flex flex-row items-center justify-between">
+                    <div class="flex flex-col gap-y-0.5">
+                        <h3 class="font-semibold text-base">Bad Decisions</h3>
+                        <p class="text-sm text-accent1">John Doe</p>
+                        <p class="text-sm text-accent1">80 BPM</p>
+                    </div>
+                    <div class="bg-white rounded-full w-11 aspect-square flex items-center justify-center">
+                        <svg data-slot="icon" aria-hidden="true" fill="none" stroke-width="1.5" stroke="black"
+                            class="w-5 h-5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+                                stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col gap-y-2">
+                <div class="w-full aspect-square rounded-[10px] relative">
+                    <img src="/assets/img/bruno-thethe-O-1.jpg" alt="" class="rounded-[10px] w-full aspect-square">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="66.564" height="66.564" viewBox="0 0 66.564 66.564"
+                        class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
+                        <path id="Path_61" data-name="Path 61"
+                            d="M37.282,4A33.282,33.282,0,1,0,70.564,37.282,33.273,33.273,0,0,0,37.282,4ZM30.626,52.259V22.305L50.595,37.282Z"
+                            transform="translate(-4 -4)" opacity="0.699" />
+                    </svg>
+
+                </div>
+                <div class="flex flex-row items-center justify-between">
+                    <div class="flex flex-col gap-y-0.5">
+                        <h3 class="font-semibold text-base">Bad Decisions</h3>
+                        <p class="text-sm text-accent1">John Doe</p>
+                        <p class="text-sm text-accent1">80 BPM</p>
+                    </div>
+                    <div class="bg-white rounded-full w-11 aspect-square flex items-center justify-center">
+                        <svg data-slot="icon" aria-hidden="true" fill="none" stroke-width="1.5" stroke="black"
+                            class="w-5 h-5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+                                stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col gap-y-2">
+                <div class="w-full aspect-square rounded-[10px] relative">
+                    <img src="/assets/img/bruno-thethe-O-1.jpg" alt="" class="rounded-[10px] w-full aspect-square">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="66.564" height="66.564" viewBox="0 0 66.564 66.564"
+                        class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
+                        <path id="Path_61" data-name="Path 61"
+                            d="M37.282,4A33.282,33.282,0,1,0,70.564,37.282,33.273,33.273,0,0,0,37.282,4ZM30.626,52.259V22.305L50.595,37.282Z"
+                            transform="translate(-4 -4)" opacity="0.699" />
+                    </svg>
+
+                </div>
+                <div class="flex flex-row items-center justify-between">
+                    <div class="flex flex-col gap-y-0.5">
+                        <h3 class="font-semibold text-base">Bad Decisions</h3>
+                        <p class="text-sm text-accent1">John Doe</p>
+                        <p class="text-sm text-accent1">80 BPM</p>
+                    </div>
+                    <div class="bg-white rounded-full w-11 aspect-square flex items-center justify-center">
+                        <svg data-slot="icon" aria-hidden="true" fill="none" stroke-width="1.5" stroke="black"
+                            class="w-5 h-5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+                                stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col gap-y-2">
+                <div class="w-full aspect-square rounded-[10px] relative">
+                    <img src="/assets/img/bruno-thethe-O-1.jpg" alt="" class="rounded-[10px] w-full aspect-square">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="66.564" height="66.564" viewBox="0 0 66.564 66.564"
+                        class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
+                        <path id="Path_61" data-name="Path 61"
+                            d="M37.282,4A33.282,33.282,0,1,0,70.564,37.282,33.273,33.273,0,0,0,37.282,4ZM30.626,52.259V22.305L50.595,37.282Z"
+                            transform="translate(-4 -4)" opacity="0.699" />
+                    </svg>
+
+                </div>
+                <div class="flex flex-row items-center justify-between">
+                    <div class="flex flex-col gap-y-0.5">
+                        <h3 class="font-semibold text-base">Bad Decisions</h3>
+                        <p class="text-sm text-accent1">John Doe</p>
+                        <p class="text-sm text-accent1">80 BPM</p>
+                    </div>
+                    <div class="bg-white rounded-full w-11 aspect-square flex items-center justify-center">
+                        <svg data-slot="icon" aria-hidden="true" fill="none" stroke-width="1.5" stroke="black"
+                            class="w-5 h-5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+                                stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col gap-y-2">
+                <div class="w-full aspect-square rounded-[10px] relative">
+                    <img src="/assets/img/bruno-thethe-O-1.jpg" alt="" class="rounded-[10px] w-full aspect-square">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="66.564" height="66.564" viewBox="0 0 66.564 66.564"
+                        class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
+                        <path id="Path_61" data-name="Path 61"
+                            d="M37.282,4A33.282,33.282,0,1,0,70.564,37.282,33.273,33.273,0,0,0,37.282,4ZM30.626,52.259V22.305L50.595,37.282Z"
+                            transform="translate(-4 -4)" opacity="0.699" />
+                    </svg>
+
+                </div>
+                <div class="flex flex-row items-center justify-between">
+                    <div class="flex flex-col gap-y-0.5">
+                        <h3 class="font-semibold text-base">Bad Decisions</h3>
+                        <p class="text-sm text-accent1">John Doe</p>
+                        <p class="text-sm text-accent1">80 BPM</p>
+                    </div>
+                    <div class="bg-white rounded-full w-11 aspect-square flex items-center justify-center">
+                        <svg data-slot="icon" aria-hidden="true" fill="none" stroke-width="1.5" stroke="black"
+                            class="w-5 h-5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+                                stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col gap-y-2">
+                <div class="w-full aspect-square rounded-[10px] relative">
+                    <img src="/assets/img/bruno-thethe-O-1.jpg" alt="" class="rounded-[10px] w-full aspect-square">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="66.564" height="66.564" viewBox="0 0 66.564 66.564"
+                        class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
+                        <path id="Path_61" data-name="Path 61"
+                            d="M37.282,4A33.282,33.282,0,1,0,70.564,37.282,33.273,33.273,0,0,0,37.282,4ZM30.626,52.259V22.305L50.595,37.282Z"
+                            transform="translate(-4 -4)" opacity="0.699" />
+                    </svg>
+
+                </div>
+                <div class="flex flex-row items-center justify-between">
+                    <div class="flex flex-col gap-y-0.5">
+                        <h3 class="font-semibold text-base">Bad Decisions</h3>
+                        <p class="text-sm text-accent1">John Doe</p>
+                        <p class="text-sm text-accent1">80 BPM</p>
+                    </div>
+                    <div class="bg-white rounded-full w-11 aspect-square flex items-center justify-center">
+                        <svg data-slot="icon" aria-hidden="true" fill="none" stroke-width="1.5" stroke="black"
+                            class="w-5 h-5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+                                stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col gap-y-2">
+                <div class="w-full aspect-square rounded-[10px] relative">
+                    <img src="/assets/img/bruno-thethe-O-1.jpg" alt="" class="rounded-[10px] w-full aspect-square">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="66.564" height="66.564" viewBox="0 0 66.564 66.564"
+                        class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
+                        <path id="Path_61" data-name="Path 61"
+                            d="M37.282,4A33.282,33.282,0,1,0,70.564,37.282,33.273,33.273,0,0,0,37.282,4ZM30.626,52.259V22.305L50.595,37.282Z"
+                            transform="translate(-4 -4)" opacity="0.699" />
+                    </svg>
+
+                </div>
+                <div class="flex flex-row items-center justify-between">
+                    <div class="flex flex-col gap-y-0.5">
+                        <h3 class="font-semibold text-base">Bad Decisions</h3>
+                        <p class="text-sm text-accent1">John Doe</p>
+                        <p class="text-sm text-accent1">80 BPM</p>
+                    </div>
+                    <div class="bg-white rounded-full w-11 aspect-square flex items-center justify-center">
+                        <svg data-slot="icon" aria-hidden="true" fill="none" stroke-width="1.5" stroke="black"
+                            class="w-5 h-5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+                                stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col gap-y-2">
+                <div class="w-full aspect-square rounded-[10px] relative">
+                    <img src="/assets/img/bruno-thethe-O-1.jpg" alt="" class="rounded-[10px] w-full aspect-square">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="66.564" height="66.564" viewBox="0 0 66.564 66.564"
+                        class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
+                        <path id="Path_61" data-name="Path 61"
+                            d="M37.282,4A33.282,33.282,0,1,0,70.564,37.282,33.273,33.273,0,0,0,37.282,4ZM30.626,52.259V22.305L50.595,37.282Z"
+                            transform="translate(-4 -4)" opacity="0.699" />
+                    </svg>
+
+                </div>
                 <div class="flex flex-row items-center justify-between">
                     <div class="flex flex-col gap-y-0.5">
                         <h3 class="font-semibold text-base">Bad Decisions</h3>
@@ -242,9 +498,35 @@
 
         </div>
         <div>
-            <nav>
+            <div class="col-span-full flex justify-center gap-x-2 text-sm font-medium pt-6">
+                <!-- PREV -->
+                <div class="w-6 h-6 rounded-full bg-[#818181] flex justify-center items-center cursor-pointer">
+                    <img class="rotate-90" src="assets/img/arrow-gray.svg" alt="">
+                </div>
 
-            </nav>
+                <div class="w-6 h-6 rounded-full bg-white flex justify-center items-center cursor-pointer text-black">
+                    <span>1</span>
+                </div>
+                <div class="w-6 h-6 rounded-full bg-accent6 flex justify-center items-center cursor-pointer text-black">
+                    <span>2</span>
+                </div>
+                <div class="w-6 h-6 rounded-full bg-accent6 flex justify-center items-center cursor-pointer text-black">
+                    <span>3</span>
+                </div>
+                <div class="w-6 h-6 rounded-full bg-accent6 flex justify-center items-center cursor-pointer text-black">
+                    <span>4</span>
+                </div>
+                <div class="w-6 h-6 rounded-full bg-accent6 flex justify-center items-center cursor-pointer text-black">
+                    <span>5</span>
+                </div>
+
+
+                <!-- Next -->
+                <div class="w-6 h-6 rounded-full bg-[#818181] flex justify-center items-center cursor-pointer">
+                    <img class="-rotate-90" src="assets/img/arrow-gray.svg" alt="">
+                </div>
+
+            </div>
         </div>
     </div>
 

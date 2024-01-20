@@ -19,13 +19,78 @@ html {
     scroll-behavior: smooth;
 }
 
-div.active p:nth-child(3){
+div.active p:nth-child(3) {
     color: #2F6893;
 }
- 
+
 #left-sidebar {
     height: calc(100vh - 86px);
+    background: transparent linear-gradient(164deg, rgba(12, 12, 12, 0.7) 0%, rgba(15, 15, 15, 0.7), rgba(57, 57, 57, 0.7) 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+    backdrop-filter: blur(26px);
+    -webkit-backdrop-filter: blur(26px);
 }
+
+
+
+
+
+
+
+/* custom scrollbar */
+
+/* .custom-scroll::-webkit-scrollbar {
+
+    width: 4px;
+    background: transparent;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+    background: #676767;
+    -webkit-border-radius: 1ex;
+    -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
+}
+
+.custom-scroll::-webkit-scrollbar-corner {
+    background: #000;
+} */
+
+.hidden-scroll-bar::-webkit-scrollbar {
+    width: 0px;
+}
+
+.hidden-scroll-bar {
+    scrollbar-width: none;
+}
+
+.custom-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+    transition: scrollbar-color 0.3s;
+}
+
+.custom-scrollbar:not(:hover)::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+    width: 2px;
+}
+
+
+.custom-scrollbar:hover {
+    scrollbar-color: #676767 transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    transition: all 0.3s;
+    background: rgba(67, 67, 67, 0.75);
+}
+
+
+
+
+
 
 .bg-grad-arrow {
     background: linear-gradient(90deg, #0C0C0C00 0%, #363939 100%);
@@ -40,9 +105,6 @@ div.active p:nth-child(3){
     opacity: 0.7;
 }
 
-.hidden-scroll-bar {
-    scrollbar-width: none;
-}
 
 .grad-rad-1 {
     background: transparent radial-gradient(closest-side at 50% 50%, #400E64 0%, #00000000 100%) 0% 0% no-repeat padding-box;

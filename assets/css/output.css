@@ -1003,6 +1003,10 @@ body{
   top: 0px;
 }
 
+.top-0\.5{
+  top: 0.125rem;
+}
+
 .top-1\/2{
   top: 50%;
 }
@@ -1164,6 +1168,10 @@ body{
   margin-left: 0.5rem;
 }
 
+.ml-8{
+  margin-left: 2rem;
+}
+
 .ml-auto{
   margin-left: auto;
 }
@@ -1194,10 +1202,6 @@ body{
 
 .mt-8{
   margin-top: 2rem;
-}
-
-.ml-8{
-  margin-left: 2rem;
 }
 
 .box-border{
@@ -1458,6 +1462,10 @@ body{
 
 .w-\[81\%\]{
   width: 81%;
+}
+
+.w-\[83\.43333\%\]{
+  width: 83.43333%;
 }
 
 .w-\[89\%\]{
@@ -2163,6 +2171,11 @@ body{
 .gap-x-4{
   -moz-column-gap: 1rem;
        column-gap: 1rem;
+}
+
+.gap-x-5{
+  -moz-column-gap: 1.25rem;
+       column-gap: 1.25rem;
 }
 
 .gap-x-6{
@@ -3252,6 +3265,11 @@ body{
   padding-bottom: 2rem;
 }
 
+.px-\[3\.16\%\]{
+  padding-left: 3.16%;
+  padding-right: 3.16%;
+}
+
 .pb-12{
   padding-bottom: 3rem;
 }
@@ -3270,6 +3288,10 @@ body{
 
 .pb-4{
   padding-bottom: 1rem;
+}
+
+.pb-40{
+  padding-bottom: 10rem;
 }
 
 .pb-5{
@@ -3300,8 +3322,8 @@ body{
   padding-left: 1rem;
 }
 
-.pl-\[2\.56\%\]{
-  padding-left: 2.56%;
+.pl-\[15\%\]{
+  padding-left: 15%;
 }
 
 .pl-\[3\.16\%\]{
@@ -3310,6 +3332,10 @@ body{
 
 .pl-\[8\%\]{
   padding-left: 8%;
+}
+
+.pr-2{
+  padding-right: 0.5rem;
 }
 
 .pr-4{
@@ -3366,6 +3392,10 @@ body{
 
 .pt-\[8\%\]{
   padding-top: 8%;
+}
+
+.pr-\[3\.16\%\]{
+  padding-right: 3.16%;
 }
 
 .text-left{
@@ -4190,12 +4220,67 @@ html {
   scroll-behavior: smooth;
 }
 
-div.active p:nth-child(3){
+div.active p:nth-child(3) {
   color: #2F6893;
 }
 
 #left-sidebar {
   height: calc(100vh - 86px);
+  background: transparent linear-gradient(164deg, rgba(12, 12, 12, 0.7) 0%, rgba(15, 15, 15, 0.7), rgba(57, 57, 57, 0.7) 100%) 0% 0% no-repeat padding-box;
+  opacity: 1;
+  backdrop-filter: blur(26px);
+  -webkit-backdrop-filter: blur(26px);
+}
+
+/* custom scrollbar */
+
+/* .custom-scroll::-webkit-scrollbar {
+
+    width: 4px;
+    background: transparent;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+    background: #676767;
+    -webkit-border-radius: 1ex;
+    -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
+}
+
+.custom-scroll::-webkit-scrollbar-corner {
+    background: #000;
+} */
+
+.hidden-scroll-bar::-webkit-scrollbar {
+  width: 0px;
+}
+
+.hidden-scroll-bar {
+  scrollbar-width: none;
+}
+
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+  transition: scrollbar-color 0.3s;
+}
+
+.custom-scrollbar:not(:hover)::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 2px;
+}
+
+.custom-scrollbar:hover {
+  scrollbar-color: #676767 transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  background: rgba(67, 67, 67, 0.75);
 }
 
 .bg-grad-arrow {
@@ -4209,10 +4294,6 @@ div.active p:nth-child(3){
 .bg-grad-landing-img {
   background: linear-gradient(180deg, #00000000 0%, #000000 100%) 0% 0% no-repeat padding-box;
   opacity: 0.7;
-}
-
-.hidden-scroll-bar {
-  scrollbar-width: none;
 }
 
 .grad-rad-1 {
@@ -4647,16 +4728,6 @@ div.active p:nth-child(3){
   .xli\:py-7{
     padding-top: 1.75rem;
     padding-bottom: 1.75rem;
-  }
-
-  .xli\:px-6{
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-
-  .xli\:py-5{
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
   }
 
   .xli\:pb-10{

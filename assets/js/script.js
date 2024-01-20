@@ -14,7 +14,7 @@ function resize1() {
 }
 
 musicBar.addEventListener('input', function () {
-
+    
     pseudoMusic.style.width = pseudoMusic.parentNode.offsetWidth * musicBar.value / 100 + 'px';
 });
 

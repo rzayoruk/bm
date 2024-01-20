@@ -9,7 +9,7 @@
     <title>Document</title>
 </head>
 
-<body class="">
+<body>
 
     <!-- Gradient bg -->
     <div class="w-[92%] aspect-[1266/649] fixed -top-[363px] -left-[3%] grad-rad-1 -z-10"></div>
@@ -20,7 +20,7 @@
         <div class="w-full h-full backdrop-brightness-[0.35]"></div>
     </div>
 
-
+    <!-- header -->
     <header class="flex py-4 px-[2.56%] justify-between sticky top-0 z-10 bg-accent7 text-sm xli:text-base">
 
         <div class="flex justify-between w-3/5 items-center">
@@ -72,12 +72,12 @@
         </div>
     </header>
 
-
-    <div class="grid grid-cols-[1fr_5fr] pl-[2.56%]">
+    <div class="grid grid-cols-[1fr_5fr] auto-rows-auto gap-x-5">
 
         <!-- Sticky left part -->
+
         <div id="left-sidebar"
-            class="py-4 text-xs flex flex-col gap-y-2 xli:gap-y-4 sticky top-[86px] overflow-y-auto xli:w-[90%] scrollbar-thin scrollbar-thumb-accent5 scrollbar-track-transparent">
+            class="pl-[15%] pr-2 py-4 text-xs flex flex-col gap-y-2 xli:gap-y-4 sticky top-[86px] overflow-y-auto custom-scrollbar">
             <div>
                 <div class="relative">
                     <img class="absolute top-[11px] right-3" src="assets/img/sidebar-arrow.svg" alt="">
@@ -196,11 +196,12 @@
         </div>
 
         <!-- main-->
-        <div class="grid grid-cols-2 auto-rows-auto pt-10 gap-x-6 pl-[3.16%] items-start">
+        <div class="grid grid-cols-2 auto-rows-auto pt-10 gap-x-6 items-start">
 
             <!-- landing -->
             <div>
-                <h1 class="font-medium text-[32px] leading-[44px] pt-[15%] pb-[4%] xli:text-5xl/[60px] xli:pb-10">Müzik
+                <h1 class="font-medium text-[32px] leading-[44px] pt-[15%] pb-[4%] xli:text-5xl/[60px] xli:pb-10">
+                    Müzik
                     Beatlerini alıp
                     satabileceğiniz yer.</h1>
 
@@ -314,8 +315,7 @@
             <!-- landing finished -->
 
 
-
-            <!-- Suggested -->
+            <!-- Suggested Playlist-->
             <div class="col-span-full">
 
                 <div class="pr-[3.1%] flex justify-between pt-[8%] w-full">
@@ -324,21 +324,29 @@
 
                     <div class="flex items-center gap-x-2 bttn-cont">
 
-                        <div class="rounded-full p-2 border border-primary prev-btn slid-icon hover:bg-white cursor-pointer rotate-180">
-                            <svg class="" xmlns="http://www.w3.org/2000/svg" width="10.311" height="10.311" viewBox="0 0 10.311 10.311">
-                                <path class="pathprev fill-primary" id="Path_7" data-name="Path 7" d="M13.155,8l-.912.912,3.6,3.6H8V13.8h7.842l-3.6,3.6.912.912,5.155-5.155Z" transform="translate(-8 -8)"/>
-                              </svg>
+                        <div
+                            class="rounded-full p-2 border border-primary prev-btn slid-icon hover:bg-white cursor-pointer rotate-180">
+                            <svg class="" xmlns="http://www.w3.org/2000/svg" width="10.311" height="10.311"
+                                viewBox="0 0 10.311 10.311">
+                                <path class="pathprev fill-primary" id="Path_7" data-name="Path 7"
+                                    d="M13.155,8l-.912.912,3.6,3.6H8V13.8h7.842l-3.6,3.6.912.912,5.155-5.155Z"
+                                    transform="translate(-8 -8)" />
+                            </svg>
                         </div>
-                        
-                        <div class="rounded-full p-2 border border-primary next-btn slid-icon hover:bg-white cursor-pointer">
-                            <svg class="" xmlns="http://www.w3.org/2000/svg" width="10.311" height="10.311" viewBox="0 0 10.311 10.311">
-                                <path class="pathnext fill-primary" id="Path_7" data-name="Path 7" d="M13.155,8l-.912.912,3.6,3.6H8V13.8h7.842l-3.6,3.6.912.912,5.155-5.155Z" transform="translate(-8 -8)" fill="#e0e0e0"/>
-                              </svg>
+
+                        <div
+                            class="rounded-full p-2 border border-primary next-btn slid-icon hover:bg-white cursor-pointer">
+                            <svg class="" xmlns="http://www.w3.org/2000/svg" width="10.311" height="10.311"
+                                viewBox="0 0 10.311 10.311">
+                                <path class="pathnext fill-primary" id="Path_7" data-name="Path 7"
+                                    d="M13.155,8l-.912.912,3.6,3.6H8V13.8h7.842l-3.6,3.6.912.912,5.155-5.155Z"
+                                    transform="translate(-8 -8)" fill="#e0e0e0" />
+                            </svg>
                         </div>
-                        
+
                     </div>
                 </div>
-                
+
 
                 <div class="grid auto-cols-[200px] xli:auto-cols-[240px] grid-flow-col gap-x-6 overflow-x-scroll hidden-scroll-bar pr-[3.1%]"
                     id="scroll-area">
@@ -475,7 +483,7 @@
             </div>
 
 
-
+            <!-- Suggested Member -->
             <div class="col-span-full">
 
                 <div class="pr-[6.67%] flex justify-between pt-[8%] w-full">
@@ -537,8 +545,8 @@
 
             </div>
 
-
-            <div class="col-span-full">
+            <!-- Suggested Types -->
+            <div class="col-span-full pb-40">
 
                 <div class="pr-[6.67%] flex justify-between pt-[8%] w-full">
 
@@ -546,7 +554,7 @@
                 </div>
 
                 <div
-                    class="grid auto-cols-[200px] xli:auto-cols-[260px] grid-flow-col gap-x-6 overflow-x-scroll hidden-scroll-bar pr-[6.67%]">
+                    class="grid auto-cols-[200px] xli:auto-cols-[260px] grid-flow-col gap-x-6 overflow-x-auto hidden-scroll-bar pr-[6.67%]">
 
                     <div
                         class="aspect-square w-full rounded-xl bg-beat-type relative flex items-center bg-center bg-cover">
@@ -610,66 +618,119 @@
 
             </div>
 
+            <!-- PlayBar -->
+            <div class="col-span-full fixed bottom-0 w-[83.43333%] right-0">
+
+                <div class="relative">
+                    <input id="music-bar" type="range" class="w-full absolute top-0.5 z-50 cursor-pointer">
+                    <div class="h-1 bg-[#676767]"></div>
+                    <div id="pseudo-music" class="h-1 w-0 bg-white -mt-1"></div>
+                </div>
+
+
+                <div class="bg-black grid grid-cols-[30%_1fr_30%] auto-rows-auto grid-flow-col items-center px-[2.56%]">
+
+                    <div class="flex items-center gap-x-4 py-2">
+                        <img class="w-16 aspect-square rounded-xl" src="assets/img/bruno-thethe-O-3.jpg" alt="">
+                        <div>
+                            <p class="text-sm mb-1.5">Bad Decisions</p>
+                            <p class="text-xs">John Doe</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-x-6 items-center justify-center">
+                        <img src="/assets/img/mix-icon.svg" alt="">
+                        <img src="/assets/img/back-icon.svg" alt="">
+                        <img src="/assets/img/music-play-button.svg" alt="">
+                        <img src="/assets/img/forward-icon.svg" alt="">
+                        <img src="/assets/img/loop-icon.svg" alt="">
+                    </div>
+
+
+                    <div class="flex items-center gap-x-8 justify-self-end">
+                        <img src="assets/img/plus.svg" alt="">
+                        <div class="flex gap-x-1">
+                            <div class="rounded-full w-1 h-1 bg-white"></div>
+                            <div class="rounded-full w-1 h-1 bg-white"></div>
+                            <div class="rounded-full w-1 h-1 bg-white"></div>
+                        </div>
+                        <img src="assets/img/speaker.svg" alt="">
+
+                        <div class="relative w-[75px]">
+                            <div class="h-[2px] w-full bg-[#676767] rounded-full absolute left-0"></div>
+                            <div class="h-[2px] w-0 bg-white rounded-full absolute left-0" id="pseudo"></div>
+                            <input class="w-full cursor-pointer absolute left-0 -top-2.5 appearance-none opacity-0"
+                                type="range" name="" id="volume" min="0" max="100">
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+
 
         </div>
+
+
+
     </div>
 
 
 
+    <!-- Playbar Component-->
+
+    <!-- <div class="">
 
 
-
-    <!-- Playbar -->
-
-    <div class="w-[81%] fixed bottom-[80px] left-[19%]">
-
-        <div class="h-1 bg-[#676767]"></div>
-        <div id="pseudo-music" class="h-1 w-0 bg-white -mt-1"></div>
-    </div>
-
-    <input id="music-bar" type="range" class="w-[81%] fixed bottom-[82px] left-[19%] z-50 cursor-pointer">
-    <div
-        class="w-[81%] bg-black fixed bottom-0 right-0 grid grid-cols-[30%_1fr_30%] auto-rows-auto grid-flow-col items-center px-[2.56%]">
-
-        <div class="flex items-center gap-x-4 py-2">
-            <img class="w-16 aspect-square rounded-xl" src="assets/img/bruno-thethe-O-3.jpg" alt="">
-            <div>
-                <p class="text-sm mb-1.5">Bad Decisions</p>
-                <p class="text-xs">John Doe</p>
-            </div>
-        </div>
-
-        <div class="flex gap-x-6 items-center justify-center">
-            <img src="/assets/img/mix-icon.svg" alt="">
-            <img src="/assets/img/back-icon.svg" alt="">
-            <img src="/assets/img/music-play-button.svg" alt="">
-            <img src="/assets/img/forward-icon.svg" alt="">
-            <img src="/assets/img/loop-icon.svg" alt="">
-        </div>
-
-        <div class="flex items-center gap-x-8 justify-self-end">
-            <img src="assets/img/plus.svg" alt="">
-            <div class="flex gap-x-1">
-                <div class="rounded-full w-1 h-1 bg-white"></div>
-                <div class="rounded-full w-1 h-1 bg-white"></div>
-                <div class="rounded-full w-1 h-1 bg-white"></div>
-            </div>
-            <img src="assets/img/speaker.svg" alt="">
-
-            <div class="relative w-[75px]">
-                <div class="h-[2px] w-full bg-[#676767] rounded-full absolute left-0"></div>
-                <div class="h-[2px] w-0 bg-white rounded-full absolute left-0" id="pseudo"></div>
-                <input class="w-full cursor-pointer absolute left-0 -top-2.5 appearance-none opacity-0" type="range"
-                    name="" id="volume" min="0" max="100">
-
-            </div>
-
-
+        <div class="relative">
+            <input id="music-bar" type="range" class="w-full absolute top-0.5 z-50 cursor-pointer">
+            <div class="h-1 bg-[#676767]"></div>
+            <div id="pseudo-music" class="h-1 w-0 bg-white -mt-1"></div>
         </div>
 
 
+        <div class="bg-black grid grid-cols-[30%_1fr_30%] auto-rows-auto grid-flow-col items-center px-[2.56%]">
 
-    </div>
+            <div class="flex items-center gap-x-4 py-2">
+                <img class="w-16 aspect-square rounded-xl" src="assets/img/bruno-thethe-O-3.jpg" alt="">
+                <div>
+                    <p class="text-sm mb-1.5">Bad Decisions</p>
+                    <p class="text-xs">John Doe</p>
+                </div>
+            </div>
+
+            <div class="flex gap-x-6 items-center justify-center">
+                <img src="/assets/img/mix-icon.svg" alt="">
+                <img src="/assets/img/back-icon.svg" alt="">
+                <img src="/assets/img/music-play-button.svg" alt="">
+                <img src="/assets/img/forward-icon.svg" alt="">
+                <img src="/assets/img/loop-icon.svg" alt="">
+            </div>
+
+
+            <div class="flex items-center gap-x-8 justify-self-end">
+                <img src="assets/img/plus.svg" alt="">
+                <div class="flex gap-x-1">
+                    <div class="rounded-full w-1 h-1 bg-white"></div>
+                    <div class="rounded-full w-1 h-1 bg-white"></div>
+                    <div class="rounded-full w-1 h-1 bg-white"></div>
+                </div>
+                <img src="assets/img/speaker.svg" alt="">
+
+                <div class="relative w-[75px]">
+                    <div class="h-[2px] w-full bg-[#676767] rounded-full absolute left-0"></div>
+                    <div class="h-[2px] w-0 bg-white rounded-full absolute left-0" id="pseudo"></div>
+                    <input class="w-full cursor-pointer absolute left-0 -top-2.5 appearance-none opacity-0" type="range"
+                        name="" id="volume" min="0" max="100">
+
+                </div>
+
+
+            </div>
+        </div>
+    </div> -->
 
 </body>
 

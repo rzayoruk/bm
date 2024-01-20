@@ -951,14 +951,6 @@ body{
   bottom: 0px;
 }
 
-.bottom-\[80px\]{
-  bottom: 80px;
-}
-
-.bottom-\[82px\]{
-  bottom: 82px;
-}
-
 .end-1{
   inset-inline-end: 0.25rem;
 }
@@ -969,10 +961,6 @@ body{
 
 .left-1\/2{
   left: 50%;
-}
-
-.left-\[19\%\]{
-  left: 19%;
 }
 
 .left-\[25\%\]{
@@ -1202,6 +1190,18 @@ body{
 
 .mt-8{
   margin-top: 2rem;
+}
+
+.mb-6{
+  margin-bottom: 1.5rem;
+}
+
+.ml-6{
+  margin-left: 1.5rem;
+}
+
+.mb-8{
+  margin-bottom: 2rem;
 }
 
 .box-border{
@@ -1460,10 +1460,6 @@ body{
   width: 75px;
 }
 
-.w-\[81\%\]{
-  width: 81%;
-}
-
 .w-\[83\.43333\%\]{
   width: 83.43333%;
 }
@@ -1519,6 +1515,14 @@ body{
 
 .max-w-xl{
   max-width: 36rem;
+}
+
+.max-w-\[700px\]{
+  max-width: 700px;
+}
+
+.max-w-\[600px\]{
+  max-width: 600px;
 }
 
 .flex-shrink{
@@ -3210,6 +3214,11 @@ body{
   padding-right: 2.56%;
 }
 
+.px-\[3\.16\%\]{
+  padding-left: 3.16%;
+  padding-right: 3.16%;
+}
+
 .px-\[8\%\]{
   padding-left: 8%;
   padding-right: 8%;
@@ -3263,11 +3272,6 @@ body{
 .py-8{
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-
-.px-\[3\.16\%\]{
-  padding-left: 3.16%;
-  padding-right: 3.16%;
 }
 
 .pb-12{
@@ -3326,10 +3330,6 @@ body{
   padding-left: 15%;
 }
 
-.pl-\[3\.16\%\]{
-  padding-left: 3.16%;
-}
-
 .pl-\[8\%\]{
   padding-left: 8%;
 }
@@ -3352,6 +3352,10 @@ body{
 
 .pr-\[3\.1\%\]{
   padding-right: 3.1%;
+}
+
+.pr-\[3\.16\%\]{
+  padding-right: 3.16%;
 }
 
 .pr-\[6\%\]{
@@ -3392,10 +3396,6 @@ body{
 
 .pt-\[8\%\]{
   padding-top: 8%;
-}
-
-.pr-\[3\.16\%\]{
-  padding-right: 3.16%;
 }
 
 .text-left{
@@ -3695,6 +3695,11 @@ body{
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[\#acacac\]{
+  --tw-text-opacity: 1;
+  color: rgb(172 172 172 / var(--tw-text-opacity));
 }
 
 .underline{
@@ -4208,14 +4213,6 @@ body{
   display: none;
 }
 
-.scrollbar-track-transparent{
-  --scrollbar-track: transparent !important;
-}
-
-.scrollbar-thumb-accent5{
-  --scrollbar-thumb: #838383 !important;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -4678,8 +4675,24 @@ div.active p:nth-child(3) {
     margin-top: 2rem;
   }
 
-  .xli\:w-\[90\%\]{
-    width: 90%;
+  .xli\:mb-6{
+    margin-bottom: 1.5rem;
+  }
+
+  .xli\:mb-8{
+    margin-bottom: 2rem;
+  }
+
+  .xli\:ml-8{
+    margin-left: 2rem;
+  }
+
+  .xli\:mb-10{
+    margin-bottom: 2.5rem;
+  }
+
+  .xli\:mb-12{
+    margin-bottom: 3rem;
   }
 
   .xli\:auto-cols-\[240px\]{
@@ -4728,6 +4741,11 @@ div.active p:nth-child(3) {
   .xli\:py-7{
     padding-top: 1.75rem;
     padding-bottom: 1.75rem;
+  }
+
+  .xli\:py-3{
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
   }
 
   .xli\:pb-10{
@@ -4779,6 +4797,11 @@ div.active p:nth-child(3) {
   .xli\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .xli\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
 

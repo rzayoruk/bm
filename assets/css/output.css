@@ -1152,8 +1152,20 @@ body{
   margin-bottom: 1rem;
 }
 
+.mb-6{
+  margin-bottom: 1.5rem;
+}
+
+.mb-8{
+  margin-bottom: 2rem;
+}
+
 .ml-2{
   margin-left: 0.5rem;
+}
+
+.ml-6{
+  margin-left: 1.5rem;
 }
 
 .ml-8{
@@ -1190,18 +1202,6 @@ body{
 
 .mt-8{
   margin-top: 2rem;
-}
-
-.mb-6{
-  margin-bottom: 1.5rem;
-}
-
-.ml-6{
-  margin-left: 1.5rem;
-}
-
-.mb-8{
-  margin-bottom: 2rem;
 }
 
 .box-border{
@@ -1505,6 +1505,14 @@ body{
   max-width: 56rem;
 }
 
+.max-w-\[600px\]{
+  max-width: 600px;
+}
+
+.max-w-\[700px\]{
+  max-width: 700px;
+}
+
 .max-w-lg{
   max-width: 32rem;
 }
@@ -1515,14 +1523,6 @@ body{
 
 .max-w-xl{
   max-width: 36rem;
-}
-
-.max-w-\[700px\]{
-  max-width: 700px;
-}
-
-.max-w-\[600px\]{
-  max-width: 600px;
 }
 
 .flex-shrink{
@@ -3350,10 +3350,6 @@ body{
   padding-right: 18px;
 }
 
-.pr-\[3\.1\%\]{
-  padding-right: 3.1%;
-}
-
 .pr-\[3\.16\%\]{
   padding-right: 3.16%;
 }
@@ -3622,6 +3618,11 @@ body{
   color: rgb(129 129 129 / var(--tw-text-opacity));
 }
 
+.text-\[\#acacac\]{
+  --tw-text-opacity: 1;
+  color: rgb(172 172 172 / var(--tw-text-opacity));
+}
+
 .text-\[\#dddddd\]{
   --tw-text-opacity: 1;
   color: rgb(221 221 221 / var(--tw-text-opacity));
@@ -3695,11 +3696,6 @@ body{
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-\[\#acacac\]{
-  --tw-text-opacity: 1;
-  color: rgb(172 172 172 / var(--tw-text-opacity));
 }
 
 .underline{
@@ -4274,10 +4270,28 @@ div.active p:nth-child(3) {
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  border-radius: 5px;
+  border-radius: 50%;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   background: rgba(67, 67, 67, 0.75);
+}
+
+/* scroll buttons */
+
+.slid-icon.active{
+  opacity:1;
+  transition: 0.3s ease;
+  pointer-events: all;
+}
+
+.bttn-cont{
+  opacity: 0;
+  pointer-events: none;
+}
+
+.bttn-cont.active{
+  opacity: 1;
+  pointer-events: all;
 }
 
 .bg-grad-arrow {
@@ -4324,14 +4338,6 @@ div.active p:nth-child(3) {
 
 .card-hover:hover .card-play {
   opacity: .7;
-}
-
-.prev-btn:hover svg>.pathprev {
-  fill: black;
-}
-
-.next-btn:hover svg>.pathnext {
-  fill: black;
 }
 
 /* input[type="range"]::-moz-range-progress {
@@ -4659,6 +4665,14 @@ div.active p:nth-child(3) {
 }
 
 @media (min-width: 1400px){
+  .xli\:mb-10{
+    margin-bottom: 2.5rem;
+  }
+
+  .xli\:mb-12{
+    margin-bottom: 3rem;
+  }
+
   .xli\:mb-2{
     margin-bottom: 0.5rem;
   }
@@ -4667,32 +4681,20 @@ div.active p:nth-child(3) {
     margin-bottom: 0.75rem;
   }
 
-  .xli\:mt-10{
-    margin-top: 2.5rem;
-  }
-
-  .xli\:mt-8{
-    margin-top: 2rem;
-  }
-
   .xli\:mb-6{
     margin-bottom: 1.5rem;
-  }
-
-  .xli\:mb-8{
-    margin-bottom: 2rem;
   }
 
   .xli\:ml-8{
     margin-left: 2rem;
   }
 
-  .xli\:mb-10{
-    margin-bottom: 2.5rem;
+  .xli\:mt-10{
+    margin-top: 2.5rem;
   }
 
-  .xli\:mb-12{
-    margin-bottom: 3rem;
+  .xli\:mt-8{
+    margin-top: 2rem;
   }
 
   .xli\:auto-cols-\[240px\]{
@@ -4738,14 +4740,14 @@ div.active p:nth-child(3) {
     padding-bottom: 0.5rem;
   }
 
-  .xli\:py-7{
-    padding-top: 1.75rem;
-    padding-bottom: 1.75rem;
-  }
-
   .xli\:py-3{
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
+  }
+
+  .xli\:py-7{
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
   }
 
   .xli\:pb-10{
@@ -4768,6 +4770,11 @@ div.active p:nth-child(3) {
   .xli\:text-3xl{
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+
+  .xli\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 
   .xli\:text-5xl{
@@ -4797,11 +4804,6 @@ div.active p:nth-child(3) {
   .xli\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-
-  .xli\:text-4xl{
-    font-size: 2.25rem;
-    line-height: 2.5rem;
   }
 }
 

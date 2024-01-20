@@ -1,12 +1,3 @@
-const scrollArea = document.getElementById('scroll-area');
-const prevIcon = document.querySelector('.prev-btn');
-const nextIcon = document.querySelector('.next-btn');
-const iconCont = document.querySelector('.bttn-cont');
-
-//console.log(scrollArea.parentNode)
-
-
-
 function isScrollEnd(scrollArea) {
     return scrollArea.scrollLeft + scrollArea.offsetWidth == scrollArea.scrollWidth;
 }
@@ -19,50 +10,64 @@ function hasHorizontalScroll(scrollArea) {
     return scrollArea.scrollWidth > scrollArea.offsetWidth
 }
 
+function scrollControl(scrollArea) {
+    var iconCont = scrollArea.previousElementSibling.querySelector('.bttn-cont');
 
-
-scrollArea.addEventListener('scroll',scrollControl);
-
-function scrollControl(){
-
-
-
-
-    if(hasHorizontalScroll(scrollArea)){
+    if (hasHorizontalScroll(scrollArea)) {
         iconCont.classList.add('active')
 
-        if(isScrollStart(scrollArea)){
+        if (isScrollStart(scrollArea)) {
             //console.log('scrollenbaşta')
-            prevIcon.classList.remove('active')
-            nextIcon.classList.add('active')
+            iconCont.querySelector('.prev-btn').classList.remove('active')
+            iconCont.querySelector('.next-btn').classList.add('active')
+
         }
-        else{
+        else {
             //console.log('scrollbaşta değil')
-            prevIcon.classList.add('active')
+            iconCont.querySelector('.prev-btn').classList.add('active')
         }
 
-        if(isScrollEnd(scrollArea)){
+        if (isScrollEnd(scrollArea)) {
             //console.log('scrollensonda')
-            prevIcon.classList.add('active')
-            nextIcon.classList.remove('active')
+            iconCont.querySelector('.prev-btn').classList.add('active')
+            iconCont.querySelector('.next-btn').classList.remove('active')
+
         }
-        else{
+        else {
             //console.log('scrollensonda değil')
-            nextIcon.classList.add('active')
+            iconCont.querySelector('.next-btn').classList.add('active')
         }
     }
-    else{
+    else {
         iconCont.classList.remove('active')
     }
-
-    
 }
 
-nextIcon.addEventListener('click', () => {
-    scrollArea.scrollLeft += scrollArea.offsetWidth / 5;
+const scrollAreas = document.querySelectorAll('.scroll-area');
+
+scrollAreas.forEach(scrollArea => {
+    //console.log(element.previousElementSibling)
+    //console.log(scrollArea)
+    iconCont = scrollArea.previousElementSibling.querySelector('.bttn-cont')
+    nextIcon = iconCont.querySelector('.next-btn')
+    prevIcon = iconCont.querySelector('.prev-btn')
+
+
+    nextIcon.addEventListener('click', () => {
+        scrollArea.scrollLeft += scrollArea.offsetWidth / 4 + 24;
+    });
+
+    prevIcon.addEventListener('click', () => {
+        scrollArea.scrollLeft -= scrollArea.offsetWidth / 4 - 24;
+    });
+
+    scrollControl(scrollArea, prevIcon, nextIcon, iconCont)
+
+    scrollArea.addEventListener('scroll', () => scrollControl(scrollArea));
+
+    new ResizeObserver(() => scrollControl(scrollArea)).observe(scrollArea);
+
 });
 
-prevIcon.addEventListener('click', () => {
-    scrollArea.scrollLeft -= scrollArea.offsetWidth / 5;
-});
+
 

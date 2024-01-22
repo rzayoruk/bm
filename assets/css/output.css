@@ -963,6 +963,10 @@ body{
   left: 50%;
 }
 
+.left-\[1px\]{
+  left: 1px;
+}
+
 .left-\[25\%\]{
   left: 25%;
 }
@@ -1017,6 +1021,10 @@ body{
 
 .top-\[11px\]{
   top: 11px;
+}
+
+.top-\[2px\]{
+  top: 2px;
 }
 
 .top-\[86px\]{
@@ -1186,6 +1194,10 @@ body{
 
 .mt-2{
   margin-top: 0.5rem;
+}
+
+.mt-20{
+  margin-top: 5rem;
 }
 
 .mt-4{
@@ -1511,6 +1523,10 @@ body{
 
 .max-w-\[700px\]{
   max-width: 700px;
+}
+
+.max-w-\[916px\]{
+  max-width: 916px;
 }
 
 .max-w-lg{
@@ -1934,6 +1950,10 @@ body{
 
 .grid-cols-\[30\%_1fr_30\%\]{
   grid-template-columns: 30% 1fr 30%;
+}
+
+.grid-cols-\[4fr_7fr\]{
+  grid-template-columns: 4fr 7fr;
 }
 
 .grid-cols-\[6\%_21\%_11\%_8\%_127px_4\%\]{
@@ -3000,6 +3020,10 @@ body{
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
 
+.bg-hovers{
+  background-image: url('/assets/img/pexels-harrison-haines-3165428.jpg');
+}
+
 .bg-landing-img{
   background-image: url('/assets/img/bruno-thethe-O-3.jpg');
 }
@@ -3358,8 +3382,8 @@ body{
   padding-right: 6%;
 }
 
-.pr-\[6\.67\%\]{
-  padding-right: 6.67%;
+.pr-\[6\.63\%\]{
+  padding-right: 6.63%;
 }
 
 .pt-1{
@@ -4209,6 +4233,57 @@ body{
   display: none;
 }
 
+:root {
+  --card-color: rgb(23, 23, 23)
+
+}
+
+.card {
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+}
+
+.card::before,
+.card>.card-border {
+  border-radius: inherit;
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.card::before {
+  background: radial-gradient(800px circle at var(--mouse-x) var(--mouse-y), rgba(255, 255, 255, 0.2), transparent 30%);
+  z-index: 3;
+}
+
+.card>.card-border {
+  background: radial-gradient(400px circle at var(--mouse-x) var(--mouse-y), rgba(255, 255, 255, 0.65), transparent 40%);
+  z-index: 1;
+}
+
+#cards:hover>a>.card>.card-border {
+  opacity: 1;
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+.card>.card-content {
+  height: calc(100% - 4px);
+  width: calc(100% - 4px);
+  border-radius: inherit;
+  margin: 1px;
+  z-index: 2;
+  position: relative;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -4262,34 +4337,33 @@ div.active p:nth-child(3) {
 }
 
 .custom-scrollbar::-webkit-scrollbar {
-  width: 2px;
+  width: 4px;
 }
 
 .custom-scrollbar:hover {
-  scrollbar-color: #676767 transparent;
+  scrollbar-color: white transparent;
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  border-radius: 50%;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  background: rgba(67, 67, 67, 0.75);
+  background: rgba(255, 255, 255, 0.75);
 }
 
 /* scroll buttons */
 
-.slid-icon.active{
-  opacity:1;
+.slid-icon.active {
+  opacity: 1;
   transition: 0.3s ease;
   pointer-events: all;
 }
 
-.bttn-cont{
+.bttn-cont {
   opacity: 0;
   pointer-events: none;
 }
 
-.bttn-cont.active{
+.bttn-cont.active {
   opacity: 1;
   pointer-events: all;
 }
@@ -4476,6 +4550,16 @@ div.active p:nth-child(3) {
 
 .marker\:text-\[\#299FF5\]::marker{
   color: rgb(41 159 245 );
+}
+
+.placeholder\:text-\[\#555555\]::-moz-placeholder{
+  --tw-text-opacity: 1;
+  color: rgb(85 85 85 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-\[\#555555\]::placeholder{
+  --tw-text-opacity: 1;
+  color: rgb(85 85 85 / var(--tw-text-opacity));
 }
 
 .placeholder\:text-accent14::-moz-placeholder{

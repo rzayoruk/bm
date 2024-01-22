@@ -77,6 +77,7 @@ module.exports = {
         'landing-img': "url('/assets/img/bruno-thethe-O-3.jpg')",
         'play-btn': "url('/assets/img/play-btn.svg')",
         'beat-type': "url('/assets/img/pexels-harrison-haines-3165428.jpg')",
+        'hovers': "url('/assets/img/pexels-harrison-haines-3165428.jpg')",
 
       },
       boxShadow: {

@@ -34,7 +34,7 @@
                 <div
                     class="w-1/5 border border-r-[0.5px] border-accent6 rounded-l-[5px] bg-accent8 min-w-20 relative cursor-pointer">
 
-                    <select name="" id="" class=" text-primary py-4 pl-2 pr-4  bg-transparent w-full appearance-none">
+                    <select name="" id="" class=" text-primary py-4 pl-2 pr-4  bg-transparent w-full appearance-none focus:outline-none focus:border-none focus:ring-offset-0 focus:ring-0 border-none bg-none">
                         <option value="">Tracks</option>
                     </select>
                     <img class="absolute top-6 right-2.5 pointer-events-none" src="/assets/img/arrow-bottom.svg" alt="">
@@ -44,7 +44,7 @@
                 <div class="w-4/5 pr-8 relative bg-accent7 border border-l-0 border-accent6 rounded-r-[5px]">
 
                     <input type="text"
-                        class="py-4 focus:outline-none px-3 pr-[18px] bg-transparent placeholder-accent5  w-full"
+                        class="py-4 focus:outline-none focus:border-none focus:ring-offset-0 focus:ring-0 border-none px-3 pr-[18px] bg-transparent placeholder-accent5  w-full"
                         placeholder="Ne Arıyorsunuz?">
                     <a href="#" class="absolute right-0 top-0 block p-[18px]">
                         <img class="" src="/assets/img/search-icon.svg" alt="">
@@ -67,7 +67,7 @@
                 <a class="px-4" href="register.html">Üye Ol</a>
             </div>
 
-            <a class="py-2 px-6 border border-white rounded-[5px]" href="add-beat.html">Satmaya Başla</a>
+            <a class=" py-2 px-6 border border-white rounded-[5px]" href="add-beat.html">Satmaya Başla</a>
 
         </div>
     </header>
@@ -82,53 +82,56 @@
         </ul>
     </div>
 
+    <div class="h-[calc(100vh-150px)] grid content-center">
+        <div>
+            <h1 class="text-center font-medium text-2xl xli:text-3xl">Giriş Yap</h1>
 
-    <h1 class="text-center font-medium text-2xl xli:text-3xl mt-20">Giriş Yap</h1>
-
-    <form class="w-2/5 mx-auto grid grid-cols-2 p-6 bg-accent7 border-[#1f1f1f] rounded-xl mt-6 xli:mt-8 gap-6">
+            <form class="w-2/5 mx-auto grid grid-cols-2 p-6 bg-accent7 border-[#1f1f1f] rounded-xl mt-6 xli:mt-8 gap-6">
 
 
-        <div class="w-full col-span-full">
-            <label class="block mb-2 cursor-pointer" for="">E-Posta</label>
-            <input type="email"
-                class="w-full text-sm appearance-none bg-transparent border border-[#555555] focus:ring-0 focus:border-[#555555] focus:outline-none rounded-md px-4 py-3 caret-[#555555] placeholder:text-[#555555]"
-                placeholder="E-Posta">
-        </div>
-        <div class="w-full col-span-full">
-            <label class="block mb-2 cursor-pointer" for="">Parola</label>
-            <input type="password"
-                class="w-full text-sm appearance-none bg-transparent border border-[#555555] focus:ring-0 focus:border-[#555555] focus:outline-none rounded-md px-4 py-3 caret-[#555555] placeholder:text-[#555555]"
-                placeholder="Parola">
-        </div>
+                <div class="w-full col-span-full">
+                    <label class="block mb-2 cursor-pointer" for="">E-Posta</label>
+                    <input type="email"
+                        class="w-full text-sm appearance-none bg-transparent border border-[#555555] focus:ring-0 focus:border-[#555555] focus:outline-none rounded-md px-4 py-3 caret-[#555555] placeholder:text-[#555555]"
+                        placeholder="E-Posta">
+                </div>
+                <div class="w-full col-span-full">
+                    <label class="block mb-2 cursor-pointer" for="">Parola</label>
+                    <input type="password"
+                        class="w-full text-sm appearance-none bg-transparent border border-[#555555] focus:ring-0 focus:border-[#555555] focus:outline-none rounded-md px-4 py-3 caret-[#555555] placeholder:text-[#555555]"
+                        placeholder="Parola">
+                </div>
 
-        <div class="col-span-full flex items-center justify-between">
-            <div>
-                <input type="checkbox" name="remember" id="remember"
-                    class="w-6 h-6 bg-transparent form-checkbox text-[#1877F2] focus:ring-offset-0 focus:ring-0 border border-accent6 rounded-[5px] focus:outline-none transition duration-300 cursor-pointer -mt-0.5">
-                <label class="ml-2 text-accent9 text-sm xli:text-base cursor-pointer" for="remember">Beni
-                    Hatırla</label>
-                <a class="ml-8 text-accent9 text-sm xli:text-base cursor-pointer" href="">Parolamı Unuttum</a>
+                <div class="col-span-full flex items-center justify-between">
+                    <div>
+                        <input type="checkbox" name="remember" id="remember"
+                            class="w-6 h-6 bg-transparent form-checkbox text-[#1877F2] focus:ring-offset-0 focus:ring-0 border border-accent6 rounded-[5px] focus:outline-none transition duration-300 cursor-pointer -mt-0.5">
+                        <label class="ml-2 text-accent9 text-sm xli:text-base cursor-pointer" for="remember">Beni
+                            Hatırla</label>
+                        <a class="ml-8 text-accent9 text-sm xli:text-base cursor-pointer" href="">Parolamı Unuttum</a>
+                    </div>
+
+                    <a class="text-xs xli:text-sm font-medium bg-white text-black py-2 px-6 rounded-lg" href="">Giriş
+                        Yap</a>
+                </div>
+
+
+            </form>
+
+            <div class="w-2/5 mx-auto flex gap-x-6 mt-6 pb-8 border-b border-accent6">
+
+                <a class="py-3 w-1/2 rounded-[5px] bg-[#1877F2] text-center font-medium text-xs xli:text-sm flex justify-center gap-x-4"
+                    href=""><img src="assets/img/facebook-icon.svg" alt=""><span>Facebook ile Üye Ol</span></a>
+                <a class="py-3 w-1/2 rounded-[5px] bg-white text-black text-center font-medium text-xs xli:text-sm flex justify-center gap-x-4"
+                    href=""><img src="assets/img/google-icon.svg" alt=""><span>Google ile Üye Ol</span></a>
             </div>
 
-            <a class="text-xs xli:text-sm font-medium bg-white text-black py-2 px-6 rounded-lg" href="">Giriş Yap</a>
+            <div class="w-2/5 mx-auto flex justify-between items-center pt-4">
+                <p class="xli:text-[18px]">Henüz Üye Değil Misiniz?</p>
+                <a class="bg-transparent py-2 px-6 border border-white rounded-lg" href="register.html">Üye Ol</a>
+            </div>
         </div>
-
-
-    </form>
-
-    <div class="w-2/5 mx-auto flex gap-x-6 mt-6 pb-8 border-b border-accent6">
-
-        <a class="py-3 w-1/2 rounded-[5px] bg-[#1877F2] text-center font-medium text-xs xli:text-sm flex justify-center gap-x-4"
-            href=""><img src="assets/img/facebook-icon.svg" alt=""><span>Facebook ile Üye Ol</span></a>
-        <a class="py-3 w-1/2 rounded-[5px] bg-white text-black text-center font-medium text-xs xli:text-sm flex justify-center gap-x-4"
-            href=""><img src="assets/img/google-icon.svg" alt=""><span>Google ile Üye Ol</span></a>
     </div>
-
-    <div class="w-2/5 mx-auto flex justify-between items-center pt-4">
-        <p class="xli:text-[18px]">Henüz Üye Değil Misiniz?</p>
-        <a class="bg-transparent py-2 px-6 border border-white rounded-lg" href="register.html">Üye Ol</a>
-    </div>
-
 
 
 
